@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -T intmpi
+#PBS -b 4
+#PBS -l cpunum_job=16
+#PBS -l elapstim_req=12:00:00
+#PBS -l memsz_job=10gb
+#PBS -N spinup.MITgcm-PO4-DOP
+#PBS -o work/spinup.MITgcm-PO4-DOP.out
+#PBS -e work/spinup.MITgcm-PO4-DOP.out
+#PBS -q clfocean
+#
+module load intel intelmpi
+module load petsc-3.3-p4-intel
+#
+cd $PBS_O_WORKDIR
+#
+mpirun $NQSII_MPIOPTS -np 64 ./metos3d-simpack-MITgcm-PO4-DOP.exe option/spinup.MITgcm-PO4-DOP.option
