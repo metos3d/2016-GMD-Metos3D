@@ -470,26 +470,36 @@ def read_sp_convergence_data(nmax, filepath):
 	return [spval, spvalweight]
 
 #
-#	create_convergence_plot
+#	create_convergence_figure
 #
-def create_convergence_plot(figid, nmax, nk_conv_data, sp_conv_data, filepath):
+def create_convergence_figure(modeldir):
 	# debug
 	print "create convergence figure ..."
+	# set max data points
+	nmax = 10000
+	# read convergence data
+	nk_conv_data = read_nk_convergence_data(nmax, "%s/work/newton.%s.out" % (modeldir, modeldir))
+	sp_conv_data = read_sp_convergence_data(nmax, "%s/work/spinup.%s.out" % (modeldir, modeldir))	
 	# retrieve values
 	kspval = nk_conv_data[0]
 	snesidx = nk_conv_data[1]
 	snesval = nk_conv_data[2]
 	spval = sp_conv_data[0]
 	spvalweight = sp_conv_data[1]
+
+	# set dimensions
+	# plot
+	xrange = range(0, nmax)
+	# subplot
+	ax1l, ax1r = (0, 1000)
+	ax2l, ax2r = (1000, nmax)
+
 	# subplots
+	figid = 1
 	f = plt.figure(figid)
 	gs = gsp.GridSpec(1, 2, width_ratios=[2,1])
 	ax1 = plt.subplot(gs[0])
 	ax2 = plt.subplot(gs[1])
-	# plot
-	xrange = range(0, nmax)
-	ax1l, ax1r = (0, 1000)
-	ax2l, ax2r = (1000, nmax)
 	# spinup
 	p1, = ax1.semilogy(xrange[ax1l:ax1r], spval[ax1l:ax1r], "k-", linewidth = 1.0)
 	ax2.semilogy(xrange[ax2l:ax2r], spval[ax2l:ax2r], "k-", linewidth = 1.0)
@@ -513,8 +523,6 @@ def create_convergence_plot(figid, nmax, nk_conv_data, sp_conv_data, filepath):
 	ax1.set_ylim([10e-6, 10e+8])
 	ax2.set_ylim([10e-6, 10e+8])
 	ax2.set_yticklabels([])
-	
-	
 # 	ytext = [r"10\textsuperscript{-5}", r"10\textsuperscript{-4}", r"10\textsuperscript{-3}",
 # 			 r"10\textsuperscript{-2}", r"10\textsuperscript{-1}", r"10\textsuperscript{0}",
 # 			 r"10\textsuperscript{1}", r"10\textsuperscript{2}"]
@@ -539,8 +547,12 @@ def create_convergence_plot(figid, nmax, nk_conv_data, sp_conv_data, filepath):
 	# adjust subplots
 	plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.00, hspace=None)
 	# write to file
-	plt.savefig(filepath, bbox_inches="tight")
-	
+	plt.savefig("figures/convergnece.%s.pdf" % modeldir, bbox_inches="tight")
+
+
+# 	# create conv plot
+# 	create_convergence_plot(1, nmax, nk_conv_data, sp_conv_data, 'convergence.MITgcm-PO4-DOP.pdf')
+
 #
 #   main
 #
@@ -556,18 +568,15 @@ if __name__ == "__main__":
 		# print error message and exit with code 2
 		print("### ERROR ### '%s' does not exist or is no directory." % modeldir)
 		sys.exit(2)
-
-
-	# set prefix
-	m3dprefix = os.path.expanduser('~/.metos3d')
-	# set max data points
-	nmax = 10000
-	# read convergence data
-	nk_conv_data = read_nk_convergence_data(nmax, '../work/newton.MITgcm-PO4-DOP.out')
-	sp_conv_data = read_sp_convergence_data(nmax, '../work/spinup.MITgcm-PO4-DOP.out')
-	# create conv plot
-	create_convergence_plot(1, nmax, nk_conv_data, sp_conv_data, 'convergence.MITgcm-PO4-DOP.pdf')
+	# strip trailing slash if any
+	modeldir = os.path.normpath(modeldir)
+	# debug
+	print("using %s model" % modeldir)
+	# create convergence plot
+	create_convergence_figure(modeldir)
 	
+# 
+# 	
 # 	print sp_conv_data
 	
 	
@@ -575,3 +584,5 @@ if __name__ == "__main__":
 #     v3d = read_data()
 #     create_figures(v3d)
 
+# 	# set prefix
+# 	m3dprefix = os.path.expanduser('~/.metos3d')
