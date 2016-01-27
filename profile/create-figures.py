@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib
 matplotlib.rc("font", **{"family" : "sans-serif"})
 matplotlib.rcParams.update({'font.size': 14})
-# matplotlib.rc("text", usetex = True)
+matplotlib.rc("text", usetex = True)
 matplotlib.use("PDF")
 import matplotlib.pyplot as plt
 
@@ -56,18 +56,18 @@ def create_profile_figure(modeldir):
 	# read in profile data
 	(total, data) = read_profile_data("%s/work/profile.%s.out" % (modeldir, modeldir))
 
-	print total, data
+# 	print total, data
 	# sort
 	order = ["BGCStep", "MatCopy", "MatScale", "MatAXPY", "MatMult"]
 	def new_order(t1, t2):
 		return order.index(t1[0]) - order.index(t2[0])
 	data = sorted(data, cmp = new_order)
-	print data
+# 	print data
 	# sum
 	sum = 0.0
 	for tuple in data:
 		sum = sum + float(tuple[1])
-	print sum
+# 	print sum
 	# split lists, add other
 	dataname = []
 	datatime = []
@@ -76,7 +76,7 @@ def create_profile_figure(modeldir):
 		datatime.append(float(tuple[1]))
 	dataname.append('Other')
 	datatime.append(total-sum)
-	print dataname, datatime
+# 	print dataname, datatime
 
 	# plot   
 	fig = plt.figure(1)
@@ -87,7 +87,7 @@ def create_profile_figure(modeldir):
 		text.set_bbox(dict(edgecolor = "k", facecolor = "w"))
 	
 	# save
-	plt.savefig("profile.%s.out" % modeldir, bbox_inches = "tight")
+	plt.savefig("figures/profile.%s.pdf" % modeldir, bbox_inches = "tight")
 
 #
 #   main
