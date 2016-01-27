@@ -7,10 +7,10 @@
 #PBS -N profile.MITgcm-PO4-DOP
 #PBS -o work/profile.MITgcm-PO4-DOP.out
 #PBS -e work/profile.MITgcm-PO4-DOP.out
-#PBS -q clfocean
-#
-. ../petsc-3.3-p4.env
+#PBS -q clfo2
 #
 cd $PBS_O_WORKDIR
 #
-mpirun $NQSII_MPIOPTS -np 64 ./metos3d-simpack-MITgcm-PO4-DOP.exe option/profile.MITgcm-PO4-DOP.option -log_summary
+. ../petsc-3.3-p4.env
+#
+mpirun $NQSII_MPIOPTS -np 1 ./metos3d-simpack-MITgcm-PO4-DOP.exe option/profile.MITgcm-PO4-DOP.option -log_summary
