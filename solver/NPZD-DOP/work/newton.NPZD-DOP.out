@@ -1,0 +1,1483 @@
+
+%NQSII(INFO): ------- Output from job:0000 -------
+       1.556s Metos3DInitWithFilePath                           filePath: option/newton.NPZD-DOP.option             
+  0 SNES Function norm 1.716468858408e+02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.716468858408e+02 
+    1 KSP Residual norm 1.425156663945e+02 
+    2 KSP Residual norm 4.371154701117e+01 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.3, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: Using full step: fnorm 1.716468858408e+02 gnorm 9.392157489169e+01
+  1 SNES Function norm 9.392157489169e+01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 9.392157489169e+01 
+    1 KSP Residual norm 3.047169140851e+01 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.376951, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: Using full step: fnorm 9.392157489169e+01 gnorm 1.907983526708e+01
+  2 SNES Function norm 1.907983526708e+01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.907983526708e+01 
+    1 KSP Residual norm 1.582229156553e+01 
+    2 KSP Residual norm 1.088491237748e+01 
+    3 KSP Residual norm 9.363839404548e+00 
+    4 KSP Residual norm 8.027710424508e+00 
+    5 KSP Residual norm 5.920885981658e+00 
+    6 KSP Residual norm 5.379338568307e+00 
+    7 KSP Residual norm 3.956722516988e+00 
+    8 KSP Residual norm 3.756831864562e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.20626, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: Using full step: fnorm 1.907983526708e+01 gnorm 1.354791191413e+01
+  3 SNES Function norm 1.354791191413e+01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.354791191413e+01 
+    1 KSP Residual norm 4.828315072266e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.574638, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: Using full step: fnorm 1.354791191413e+01 gnorm 4.060248993203e+00
+  4 SNES Function norm 4.060248993203e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 4.060248993203e+00 
+    1 KSP Residual norm 2.532424579969e+00 
+    2 KSP Residual norm 2.500904718306e+00 
+    3 KSP Residual norm 1.945149347273e+00 
+    4 KSP Residual norm 1.686005398630e+00 
+    5 KSP Residual norm 1.493482086778e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.40803, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 3.760150642946e+00
+      Line search: Quadratically determined step, lambda=1.0000000000000001e-01
+  5 SNES Function norm 3.760150642946e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 3.760150642946e+00 
+    1 KSP Residual norm 2.166229534438e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.883167, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: Using full step: fnorm 3.760150642946e+00 gnorm 2.907861853058e+00
+  6 SNES Function norm 2.907861853058e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.907861853058e+00 
+    1 KSP Residual norm 2.828052209142e+00 
+    2 KSP Residual norm 2.091222308578e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.817891, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: Using full step: fnorm 2.907861853058e+00 gnorm 2.185912600306e+00
+  7 SNES Function norm 2.185912600306e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.185912600306e+00 
+    1 KSP Residual norm 2.083787604232e+00 
+    2 KSP Residual norm 1.852198244614e+00 
+    3 KSP Residual norm 1.437553596192e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.722334, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.240261265940e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.299258222813e+00 lambda=3.3940947653289998e-02
+      Line search: Cubically determined step, current gnorm 2.181136237866e+00 lambda=3.3940947653290001e-03
+  8 SNES Function norm 2.181136237866e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.181136237866e+00 
+    1 KSP Residual norm 2.028960648054e+00 
+    2 KSP Residual norm 1.820062923677e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.308954596595e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.278033530212e+00 lambda=2.5537477542603573e-02
+      Line search: Cubically determined step, current gnorm 2.179415560744e+00 lambda=2.5537477542603576e-03
+  9 SNES Function norm 2.179415560744e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.179415560744e+00 
+    1 KSP Residual norm 2.011932678692e+00 
+    2 KSP Residual norm 1.808709591425e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.311639397931e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.290258582255e+00 lambda=2.6189228934513288e-02
+      Line search: Cubically determined step, current gnorm 2.177677536759e+00 lambda=2.6189228934513291e-03
+ 10 SNES Function norm 2.177677536759e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.177677536759e+00 
+    1 KSP Residual norm 2.010448266312e+00 
+    2 KSP Residual norm 1.803885862269e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.327364078324e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.296998683394e+00 lambda=2.5245816483854017e-02
+      Line search: Cubically determined step, current gnorm 2.176037364405e+00 lambda=2.5245816483854019e-03
+ 11 SNES Function norm 2.176037364405e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.176037364405e+00 
+    1 KSP Residual norm 2.019650451452e+00 
+    2 KSP Residual norm 1.815496518578e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.340674275989e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.297162589669e+00 lambda=2.1806333520984624e-02
+      Line search: Cubically determined step, current gnorm 2.174670209043e+00 lambda=2.1806333520984623e-03
+ 12 SNES Function norm 2.174670209043e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.174670209043e+00 
+    1 KSP Residual norm 2.038101934750e+00 
+    2 KSP Residual norm 1.831086078643e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.358065096085e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.284371897312e+00 lambda=1.5311986815422108e-02
+      Line search: Cubically determined step, current gnorm 2.173706111051e+00 lambda=1.5311986815422108e-03
+ 13 SNES Function norm 2.173706111051e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.173706111051e+00 
+    1 KSP Residual norm 2.063548543827e+00 
+    2 KSP Residual norm 1.887030579717e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.372425720408e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.264188231760e+00 lambda=1.1604243356122907e-02
+      Line search: Cubically determined step, current gnorm 2.173078132572e+00 lambda=1.1604243356122907e-03
+ 14 SNES Function norm 2.173078132572e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.173078132572e+00 
+    1 KSP Residual norm 2.069675443133e+00 
+    2 KSP Residual norm 1.905677840701e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.384257925358e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.269209398272e+00 lambda=1.0861588725361512e-02
+      Line search: Cubically determined step, current gnorm 2.172557246295e+00 lambda=1.0861588725361512e-03
+ 15 SNES Function norm 2.172557246295e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.172557246295e+00 
+    1 KSP Residual norm 2.077933017913e+00 
+    2 KSP Residual norm 1.930712740607e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.385751494250e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.275158495871e+00 lambda=1.0859578377300368e-02
+      Line search: Cubically determined step, current gnorm 2.172075875024e+00 lambda=1.0859578377300368e-03
+ 16 SNES Function norm 2.172075875024e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.172075875024e+00 
+    1 KSP Residual norm 2.103185353830e+00 
+    2 KSP Residual norm 2.007023421250e+00 
+    3 KSP Residual norm 1.780143405788e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.422254320828e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 2.369819149280e+00 lambda=1.0064173787341420e-02
+      Line search: Cubically determined step, current gnorm 2.171510635640e+00 lambda=1.0064173787341420e-03
+ 17 SNES Function norm 2.171510635640e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.171510635640e+00 
+    1 KSP Residual norm 2.156047430864e+00 
+    2 KSP Residual norm 2.072590084107e+00 
+    3 KSP Residual norm 1.852575513777e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.984399698113e+00
+      Line search: Quadratically determined step, lambda=1.0354007713847485e-01
+ 18 SNES Function norm 1.984399698113e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.984399698113e+00 
+    1 KSP Residual norm 1.978972220379e+00 
+    2 KSP Residual norm 1.978159613512e+00 
+    3 KSP Residual norm 1.968185250683e+00 
+    4 KSP Residual norm 1.927208704244e+00 
+    5 KSP Residual norm 1.926300726872e+00 
+    6 KSP Residual norm 1.920774312768e+00 
+    7 KSP Residual norm 1.918215212248e+00 
+    8 KSP Residual norm 1.907915946326e+00 
+    9 KSP Residual norm 1.877787496924e+00 
+   10 KSP Residual norm 1.823395885826e+00 
+   11 KSP Residual norm 1.724358986278e+00 
+   12 KSP Residual norm 1.639348363905e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.864334, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 3.874006711547e+00
+      Line search: Cubically determined step, current gnorm 1.977737698209e+00 lambda=1.0000000000000002e-02
+ 19 SNES Function norm 1.977737698209e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.977737698209e+00 
+    1 KSP Residual norm 1.972319106577e+00 
+    2 KSP Residual norm 1.967651595404e+00 
+    3 KSP Residual norm 1.944273597222e+00 
+    4 KSP Residual norm 1.838817221583e+00 
+    5 KSP Residual norm 1.816495347956e+00 
+    6 KSP Residual norm 1.781398409737e+00 
+    7 KSP Residual norm 1.772661673269e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.093659973202e+00
+      Line search: Cubically determined step, current gnorm 1.973396574641e+00 lambda=1.1872227315318480e-02
+ 20 SNES Function norm 1.973396574641e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.973396574641e+00 
+    1 KSP Residual norm 1.972698362181e+00 
+    2 KSP Residual norm 1.967445070831e+00 
+    3 KSP Residual norm 1.946519326884e+00 
+    4 KSP Residual norm 1.842925643812e+00 
+    5 KSP Residual norm 1.835425790065e+00 
+    6 KSP Residual norm 1.799421168205e+00 
+    7 KSP Residual norm 1.787049010975e+00 
+    8 KSP Residual norm 1.716098102638e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.581525992034e+00
+      Line search: Cubically determined step, current gnorm 1.970384873391e+00 lambda=1.0000000000000002e-02
+ 21 SNES Function norm 1.970384873391e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.970384873391e+00 
+    1 KSP Residual norm 1.964235142670e+00 
+    2 KSP Residual norm 1.960971810113e+00 
+    3 KSP Residual norm 1.948662926909e+00 
+    4 KSP Residual norm 1.800425246602e+00 
+    5 KSP Residual norm 1.790459432288e+00 
+    6 KSP Residual norm 1.788119006714e+00 
+    7 KSP Residual norm 1.788099188203e+00 
+    8 KSP Residual norm 1.762586617574e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.034119476205e+00
+      Line search: Cubically determined step, current gnorm 1.964083767801e+00 lambda=1.7980154674087704e-02
+ 22 SNES Function norm 1.964083767801e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.964083767801e+00 
+    1 KSP Residual norm 1.963097830820e+00 
+    2 KSP Residual norm 1.962680300042e+00 
+    3 KSP Residual norm 1.946591313186e+00 
+    4 KSP Residual norm 1.866635484169e+00 
+    5 KSP Residual norm 1.857052909265e+00 
+    6 KSP Residual norm 1.820249759768e+00 
+    7 KSP Residual norm 1.815482376021e+00 
+    8 KSP Residual norm 1.747306005143e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.658222688066e+00
+      Line search: Cubically determined step, current gnorm 1.962846328583e+00 lambda=1.0000000000000002e-02
+ 23 SNES Function norm 1.962846328583e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.962846328583e+00 
+    1 KSP Residual norm 1.954119116287e+00 
+    2 KSP Residual norm 1.953646817839e+00 
+    3 KSP Residual norm 1.952039225287e+00 
+    4 KSP Residual norm 1.790339789667e+00 
+    5 KSP Residual norm 1.778709049672e+00 
+    6 KSP Residual norm 1.695581445358e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.090584831930e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 1.966372663080e+00 lambda=1.3711329412103236e-02
+      Line search: Cubically determined step, current gnorm 1.961163641046e+00 lambda=4.2775501924187109e-03
+ 24 SNES Function norm 1.961163641046e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.961163641046e+00 
+    1 KSP Residual norm 1.958208907464e+00 
+    2 KSP Residual norm 1.957455585470e+00 
+    3 KSP Residual norm 1.947414814119e+00 
+    4 KSP Residual norm 1.810171863643e+00 
+    5 KSP Residual norm 1.807933359617e+00 
+    6 KSP Residual norm 1.800411558633e+00 
+    7 KSP Residual norm 1.784891735291e+00 
+    8 KSP Residual norm 1.761565942131e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.970365554258e+00
+      Line search: Cubically determined step, current gnorm 1.947312550476e+00 lambda=4.1928671927089115e-02
+ 25 SNES Function norm 1.947312550476e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.947312550476e+00 
+    1 KSP Residual norm 1.933528773451e+00 
+    2 KSP Residual norm 1.932056675802e+00 
+    3 KSP Residual norm 1.869763838653e+00 
+    4 KSP Residual norm 1.806558879790e+00 
+    5 KSP Residual norm 1.793139340103e+00 
+    6 KSP Residual norm 1.747563609943e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.924491045797e+00
+      Line search: Quadratically determined step, lambda=1.0000000000000001e-01
+ 26 SNES Function norm 1.924491045797e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.924491045797e+00 
+    1 KSP Residual norm 1.914556897872e+00 
+    2 KSP Residual norm 1.895568475325e+00 
+    3 KSP Residual norm 1.886482231438e+00 
+    4 KSP Residual norm 1.877164178095e+00 
+    5 KSP Residual norm 1.873884625414e+00 
+    6 KSP Residual norm 1.829780684303e+00 
+    7 KSP Residual norm 1.781390366795e+00 
+    8 KSP Residual norm 1.674634933208e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 3.250358064286e+00
+      Line search: Cubically determined step, current gnorm 1.918839469344e+00 lambda=1.0000000000000002e-02
+ 27 SNES Function norm 1.918839469344e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.918839469344e+00 
+    1 KSP Residual norm 1.918433640814e+00 
+    2 KSP Residual norm 1.871440169154e+00 
+    3 KSP Residual norm 1.862325100766e+00 
+    4 KSP Residual norm 1.740013603101e+00 
+    5 KSP Residual norm 1.577098270658e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.230393071310e+00
+      Line search: Cubically determined step, current gnorm 1.913673614466e+00 lambda=1.0000000000000002e-02
+ 28 SNES Function norm 1.913673614466e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.913673614466e+00 
+    1 KSP Residual norm 1.913033470969e+00 
+    2 KSP Residual norm 1.858069318705e+00 
+    3 KSP Residual norm 1.857892358852e+00 
+    4 KSP Residual norm 1.804317539657e+00 
+    5 KSP Residual norm 1.656480721366e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.090576576533e+00
+      Line search: Cubically determined step, current gnorm 1.910187258055e+00 lambda=1.0000000000000002e-02
+ 29 SNES Function norm 1.910187258055e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.910187258055e+00 
+    1 KSP Residual norm 1.910124099364e+00 
+    2 KSP Residual norm 1.840971362455e+00 
+    3 KSP Residual norm 1.808731115748e+00 
+    4 KSP Residual norm 1.800278679874e+00 
+    5 KSP Residual norm 1.777266570463e+00 
+    6 KSP Residual norm 1.763652705178e+00 
+    7 KSP Residual norm 1.708546678458e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.164224260748e+00
+      Line search: Cubically determined step, current gnorm 1.907243648716e+00 lambda=1.0000000000000002e-02
+ 30 SNES Function norm 1.907243648716e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.907243648716e+00 
+    1 KSP Residual norm 1.906021989738e+00 
+    2 KSP Residual norm 1.835477620775e+00 
+    3 KSP Residual norm 1.771368871025e+00 
+    4 KSP Residual norm 1.754126259526e+00 
+    5 KSP Residual norm 1.714057990580e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.049520859360e+00
+      Line search: Cubically determined step, current gnorm 1.905693841490e+00 lambda=1.0000000000000002e-02
+ 31 SNES Function norm 1.905693841490e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.905693841490e+00 
+    1 KSP Residual norm 1.905205216332e+00 
+    2 KSP Residual norm 1.826270437655e+00 
+    3 KSP Residual norm 1.781297743163e+00 
+    4 KSP Residual norm 1.767625174573e+00 
+    5 KSP Residual norm 1.764714721597e+00 
+    6 KSP Residual norm 1.750697954285e+00 
+    7 KSP Residual norm 1.744244453849e+00 
+    8 KSP Residual norm 1.744125028880e+00 
+    9 KSP Residual norm 1.724004735935e+00 
+   10 KSP Residual norm 1.700546435106e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.373780003047e+00
+      Line search: Cubically determined step, current gnorm 1.902388961437e+00 lambda=1.0000000000000002e-02
+ 32 SNES Function norm 1.902388961437e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.902388961437e+00 
+    1 KSP Residual norm 1.901263737522e+00 
+    2 KSP Residual norm 1.807662712672e+00 
+    3 KSP Residual norm 1.763802080508e+00 
+    4 KSP Residual norm 1.759031365837e+00 
+    5 KSP Residual norm 1.726349411984e+00 
+    6 KSP Residual norm 1.641203764370e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.742151114362e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 1.905288349688e+00 lambda=1.0000000000000002e-02
+      Line search: Cubically determined step, current gnorm 1.901107423879e+00 lambda=3.2027366274686897e-03
+ 33 SNES Function norm 1.901107423879e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.901107423879e+00 
+    1 KSP Residual norm 1.900223853029e+00 
+    2 KSP Residual norm 1.826389427849e+00 
+    3 KSP Residual norm 1.793379245108e+00 
+    4 KSP Residual norm 1.783909518438e+00 
+    5 KSP Residual norm 1.780928734818e+00 
+    6 KSP Residual norm 1.720516183500e+00 
+    7 KSP Residual norm 1.719821681444e+00 
+    8 KSP Residual norm 1.708639848880e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.652589646482e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 1.945644713068e+00 lambda=1.0000000000000002e-02
+      Line search: Cubically determined step, current gnorm 1.900851443102e+00 lambda=1.0000000000000002e-03
+ 34 SNES Function norm 1.900851443102e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.900851443102e+00 
+    1 KSP Residual norm 1.900589152906e+00 
+    2 KSP Residual norm 1.836771304199e+00 
+    3 KSP Residual norm 1.811492031013e+00 
+    4 KSP Residual norm 1.804841912958e+00 
+    5 KSP Residual norm 1.800997615774e+00 
+    6 KSP Residual norm 1.773123684773e+00 
+    7 KSP Residual norm 1.769528693017e+00 
+    8 KSP Residual norm 1.767060220634e+00 
+    9 KSP Residual norm 1.754045894792e+00 
+   10 KSP Residual norm 1.743003915977e+00 
+   11 KSP Residual norm 1.696405683686e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.885480945484e+00
+      Line search: Quadratically determined step, lambda=1.0000000000000001e-01
+ 35 SNES Function norm 1.885480945484e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.885480945484e+00 
+    1 KSP Residual norm 1.758516223223e+00 
+    2 KSP Residual norm 1.635753993215e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.998975181735e+00
+      Line search: Cubically determined step, current gnorm 1.880266806000e+00 lambda=1.3401714706655323e-02
+ 36 SNES Function norm 1.880266806000e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.880266806000e+00 
+    1 KSP Residual norm 1.823979354194e+00 
+    2 KSP Residual norm 1.823979341390e+00 
+    3 KSP Residual norm 1.823963512623e+00 
+    4 KSP Residual norm 1.766352943298e+00 
+    5 KSP Residual norm 1.723012399997e+00 
+    6 KSP Residual norm 1.651917470216e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.054961841982e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 1.894479014017e+00 lambda=1.1223218493451160e-02
+      Line search: Cubic step no good, shrinking lambda, current gnorm 1.882494787002e+00 lambda=1.3003264462945153e-03
+      Line search: Cubically determined step, current gnorm 1.880256910203e+00 lambda=1.3003264462945155e-04
+ 37 SNES Function norm 1.880256910203e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.880256910203e+00 
+    1 KSP Residual norm 1.838210663502e+00 
+    2 KSP Residual norm 1.827117971215e+00 
+    3 KSP Residual norm 1.810627688216e+00 
+    4 KSP Residual norm 1.793376756819e+00 
+    5 KSP Residual norm 1.773741732606e+00 
+    6 KSP Residual norm 1.764910781578e+00 
+    7 KSP Residual norm 1.757401969929e+00 
+    8 KSP Residual norm 1.750248774859e+00 
+    9 KSP Residual norm 1.747489438575e+00 
+   10 KSP Residual norm 1.744964176439e+00 
+   11 KSP Residual norm 1.741993439846e+00 
+   12 KSP Residual norm 1.741365654808e+00 
+   13 KSP Residual norm 1.741363427585e+00 
+   14 KSP Residual norm 1.741362354650e+00 
+   15 KSP Residual norm 1.740935245738e+00 
+   16 KSP Residual norm 1.740695802116e+00 
+   17 KSP Residual norm 1.738839147205e+00 
+   18 KSP Residual norm 1.731171651180e+00 
+   19 KSP Residual norm 1.725435542107e+00 
+   20 KSP Residual norm 1.719443694793e+00 
+   21 KSP Residual norm 1.706102709576e+00 
+   22 KSP Residual norm 1.697698564792e+00 
+   23 KSP Residual norm 1.675459721445e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 4.095738474537e+01
+      Line search: Cubic step no good, shrinking lambda, current gnorm 3.890951926183e+00 lambda=1.0000000000000002e-02
+      Line search: Cubically determined step, current gnorm 1.875077595488e+00 lambda=1.0000000000000002e-03
+ 38 SNES Function norm 1.875077595488e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.875077595488e+00 
+    1 KSP Residual norm 1.814304791953e+00 
+    2 KSP Residual norm 1.796901047724e+00 
+    3 KSP Residual norm 1.727895972495e+00 
+    4 KSP Residual norm 1.647790054698e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.045441993456e+00
+      Line search: Cubically determined step, current gnorm 1.869977983563e+00 lambda=1.0000000000000002e-02
+ 39 SNES Function norm 1.869977983563e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.869977983563e+00 
+    1 KSP Residual norm 1.811976272111e+00 
+    2 KSP Residual norm 1.786541349045e+00 
+    3 KSP Residual norm 1.716249090447e+00 
+    4 KSP Residual norm 1.666277128294e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.060261158310e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 1.870046254447e+00 lambda=1.0000000000000002e-02
+      Line search: Cubically determined step, current gnorm 1.868528556530e+00 lambda=4.8555193746075672e-03
+ 40 SNES Function norm 1.868528556530e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.868528556530e+00 
+    1 KSP Residual norm 1.827092997972e+00 
+    2 KSP Residual norm 1.821831055969e+00 
+    3 KSP Residual norm 1.796566646724e+00 
+    4 KSP Residual norm 1.796501663988e+00 
+    5 KSP Residual norm 1.721646867600e+00 
+    6 KSP Residual norm 1.706332997062e+00 
+    7 KSP Residual norm 1.604737449685e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.844553396260e+00
+      Line search: Quadratically determined step, lambda=1.0000000000000001e-01
+ 41 SNES Function norm 1.844553396260e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.844553396260e+00 
+    1 KSP Residual norm 1.776877416266e+00 
+    2 KSP Residual norm 1.583901687247e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.798051449315e+00
+      Line search: Quadratically determined step, lambda=1.0000000000000001e-01
+ 42 SNES Function norm 1.798051449315e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.798051449315e+00 
+    1 KSP Residual norm 1.728259178917e+00 
+    2 KSP Residual norm 1.704246283917e+00 
+    3 KSP Residual norm 1.703729856395e+00 
+    4 KSP Residual norm 1.701700193951e+00 
+    5 KSP Residual norm 1.649230495831e+00 
+    6 KSP Residual norm 1.622204073535e+00 
+    7 KSP Residual norm 1.545771379454e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.162919400529e+00
+      Line search: Cubically determined step, current gnorm 1.793438463588e+00 lambda=1.0000000000000002e-02
+ 43 SNES Function norm 1.793438463588e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.793438463588e+00 
+    1 KSP Residual norm 1.707599731104e+00 
+    2 KSP Residual norm 1.630774591124e+00 
+    3 KSP Residual norm 1.607624777828e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.079110856019e+00
+      Line search: Cubically determined step, current gnorm 1.790433191198e+00 lambda=1.0000000000000002e-02
+ 44 SNES Function norm 1.790433191198e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.790433191198e+00 
+    1 KSP Residual norm 1.726546470270e+00 
+    2 KSP Residual norm 1.701318475277e+00 
+    3 KSP Residual norm 1.701036473501e+00 
+    4 KSP Residual norm 1.688720733807e+00 
+    5 KSP Residual norm 1.668549048467e+00 
+    6 KSP Residual norm 1.659678443341e+00 
+    7 KSP Residual norm 1.616417062886e+00 
+    8 KSP Residual norm 1.551084509527e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.132589622694e+00
+      Line search: Cubically determined step, current gnorm 1.786003867135e+00 lambda=1.0000000000000002e-02
+ 45 SNES Function norm 1.786003867135e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.786003867135e+00 
+    1 KSP Residual norm 1.722859479167e+00 
+    2 KSP Residual norm 1.719208669753e+00 
+    3 KSP Residual norm 1.709288775945e+00 
+    4 KSP Residual norm 1.707743621481e+00 
+    5 KSP Residual norm 1.688362304745e+00 
+    6 KSP Residual norm 1.679598392195e+00 
+    7 KSP Residual norm 1.652669044428e+00 
+    8 KSP Residual norm 1.611144045067e+00 
+    9 KSP Residual norm 1.540951316644e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 3.737168090101e+00
+      Line search: Cubic step no good, shrinking lambda, current gnorm 1.837058339353e+00 lambda=1.0000000000000002e-02
+      Line search: Cubically determined step, current gnorm 1.785658959052e+00 lambda=1.0000000000000002e-03
+ 46 SNES Function norm 1.785658959052e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.785658959052e+00 
+    1 KSP Residual norm 1.710140648435e+00 
+    2 KSP Residual norm 1.679844740759e+00 
+    3 KSP Residual norm 1.679600810387e+00 
+    4 KSP Residual norm 1.600790592505e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 2.495602168678e+00
+      Line search: Cubically determined step, current gnorm 1.783794556751e+00 lambda=1.0000000000000002e-02
+ 47 SNES Function norm 1.783794556751e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.783794556751e+00 
+    1 KSP Residual norm 1.758196097306e+00 
+    2 KSP Residual norm 1.746204191280e+00 
+    3 KSP Residual norm 1.723424528832e+00 
+    4 KSP Residual norm 1.711132821497e+00 
+    5 KSP Residual norm 1.708864982554e+00 
+    6 KSP Residual norm 1.683387955421e+00 
+    7 KSP Residual norm 1.652718280962e+00 
+    8 KSP Residual norm 1.585733088316e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.837857380144e+00
+      Line search: Cubically determined step, current gnorm 1.778736205426e+00 lambda=1.9955183366042337e-02
+ 48 SNES Function norm 1.778736205426e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.778736205426e+00 
+    1 KSP Residual norm 1.734768615486e+00 
+    2 KSP Residual norm 1.653179216152e+00 
+    3 KSP Residual norm 1.639884136223e+00 
+    4 KSP Residual norm 1.618244574452e+00 
+    5 KSP Residual norm 1.609006846959e+00 
+    6 KSP Residual norm 1.607845117687e+00 
+    7 KSP Residual norm 1.578583326347e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.861788568940e+00
+      Line search: Cubically determined step, current gnorm 1.773543840921e+00 lambda=1.4624863465114402e-02
+ 49 SNES Function norm 1.773543840921e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.773543840921e+00 
+    1 KSP Residual norm 1.760006054510e+00 
+    2 KSP Residual norm 1.731189893266e+00 
+    3 KSP Residual norm 1.730401964713e+00 
+    4 KSP Residual norm 1.723530111379e+00 
+    5 KSP Residual norm 1.679737893915e+00 
+    6 KSP Residual norm 1.662768948601e+00 
+    7 KSP Residual norm 1.623830392412e+00 
+    8 KSP Residual norm 1.595175905111e+00 
+KSP Object:(Metos3DNewton_) 64 MPI processes
+  type: gmres
+    GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+    GMRES: happy breakdown tolerance 1e-30
+  maximum iterations=10000, initial guess is zero
+  tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+  left preconditioning
+  using PRECONDITIONED norm type for convergence test
+PC Object:(Metos3DNewton_) 64 MPI processes
+  type: none
+  linear system matrix = precond matrix:
+  Matrix Object:   64 MPI processes
+    type: mffd
+    rows=263745, cols=263745
+      Matrix-free approximation:
+        err=1.49012e-08 (relative error in function evaluation)
+        Using wp compute h routine
+            Does not compute normU
+      Line search: gnorm after quadratic fit 1.751105092034e+00
+      Line search: Quadratically determined step, lambda=1.0000000000000001e-01
+ 50 SNES Function norm 1.751105092034e+00 
+SNES Object:(Metos3DNewton_) 64 MPI processes
+  type: ls
+  maximum iterations=50, maximum function evaluations=10000
+  tolerances: relative=1e-08, absolute=1e-50, solution=1e-08
+  total number of linear solver iterations=275
+  total number of function evaluations=475
+  Eisenstat-Walker computation of KSP relative tolerance (version 2)
+    rtol_0=0.3, rtol_max=0.9, threshold=0.1
+    gamma=1, alpha=1.61803, alpha2=1.61803
+  KSP Object:  (Metos3DNewton_)   64 MPI processes
+    type: gmres
+      GMRES: restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+      GMRES: happy breakdown tolerance 1e-30
+    maximum iterations=10000, initial guess is zero
+    tolerances:  relative=0.9, absolute=1e-50, divergence=10000
+    left preconditioning
+    using PRECONDITIONED norm type for convergence test
+  PC Object:  (Metos3DNewton_)   64 MPI processes
+    type: none
+    linear system matrix = precond matrix:
+    Matrix Object:     64 MPI processes
+      type: mffd
+      rows=263745, cols=263745
+        Matrix-free approximation:
+          err=1.49012e-08 (relative error in function evaluation)
+          Using wp compute h routine
+              Does not compute normU
+  SNESLineSearch Object:  (Metos3DNewton_)   64 MPI processes
+    type: bt
+      interpolation: cubic
+      alpha=1.000000e-04
+    maxstep=1.000000e+08, minlambda=1.000000e-12
+    tolerances: relative=1.000000e-08, absolute=1.000000e-15, lambda=1.000000e-08
+    maximum iterations=40
+    1407.899s Metos3DSolver
+    1407.901s Metos3DFinal
+
+%NQSII(INFO): ------- Output from job:0001 -------
+
+%NQSII(INFO): ------- Output from job:0002 -------
+
+%NQSII(INFO): ------- Output from job:0003 -------
