@@ -1,0 +1,165 @@
+       1.037s Metos3DInitWithFilePath                           filePath: option/profile.N.option                   
+     112.535s 0000 Spinup Function norm 3.422818120348e+01 7.687961706569e+07
+     112.873s 0001 Spinup Function norm 2.193671527276e+01 5.259287337948e+07
+     112.858s 0002 Spinup Function norm 1.618510445302e+01 4.068030799346e+07
+     112.865s 0003 Spinup Function norm 1.268741757026e+01 3.337108021112e+07
+     112.859s 0004 Spinup Function norm 1.040274835862e+01 2.847199739013e+07
+     112.797s 0005 Spinup Function norm 8.814069761938e+00 2.492157903485e+07
+     112.782s 0006 Spinup Function norm 7.650151379247e+00 2.220899736001e+07
+     112.784s 0007 Spinup Function norm 6.761836918060e+00 2.006142740904e+07
+     112.783s 0008 Spinup Function norm 6.061858301192e+00 1.831657261364e+07
+     112.782s 0009 Spinup Function norm 5.495860890040e+00 1.687043624539e+07
+    1129.029s Metos3DSolver
+    1129.038s Metos3DFinal
+************************************************************************************************************************
+***             WIDEN YOUR WINDOW TO 120 CHARACTERS.  Use 'enscript -r -fCourier9' to print this document            ***
+************************************************************************************************************************
+
+---------------------------------------------- PETSc Performance Summary: ----------------------------------------------
+
+./metos3d-simpack-N.exe on a linux-intel-opt named neshcl132 with 1 processor, by sunip194 Wed Jan 27 11:43:28 2016
+Using Petsc Release Version 3.3.0, Patch 4, Fri Oct 26 10:46:51 CDT 2012 
+
+                         Max       Max/Min        Avg      Total 
+Time (sec):           1.129e+03      1.00000   1.129e+03
+Objects:              1.130e+02      1.00000   1.130e+02
+Flops:                5.257e+11      1.00000   5.257e+11  5.257e+11
+Flops/sec:            4.656e+08      1.00000   4.656e+08  4.656e+08
+MPI Messages:         0.000e+00      0.00000   0.000e+00  0.000e+00
+MPI Message Lengths:  0.000e+00      0.00000   0.000e+00  0.000e+00
+MPI Reductions:       2.380e+02      1.00000
+
+Flop counting convention: 1 flop = 1 real number operation of type (multiply/divide/add/subtract)
+                            e.g., VecAXPY() for real vectors of length N --> 2N flops
+                            and VecAXPY() for complex vectors of length N --> 8N flops
+
+Summary of Stages:   ----- Time ------  ----- Flops -----  --- Messages ---  -- Message Lengths --  -- Reductions --
+                        Avg     %Total     Avg     %Total   counts   %Total     Avg         %Total   counts   %Total 
+ 0:      Main Stage: 1.1290e+03 100.0%  5.2572e+11 100.0%  0.000e+00   0.0%  0.000e+00        0.0%  2.370e+02  99.6% 
+
+------------------------------------------------------------------------------------------------------------------------
+See the 'Profiling' chapter of the users' manual for details on interpreting output.
+Phase summary info:
+   Count: number of times phase was executed
+   Time and Flops: Max - maximum over all processors
+                   Ratio - ratio of maximum to minimum over all processors
+   Mess: number of messages sent
+   Avg. len: average message length
+   Reduct: number of global reductions
+   Global: entire computation
+   Stage: stages of a computation. Set stages with PetscLogStagePush() and PetscLogStagePop().
+      %T - percent time in this phase         %f - percent flops in this phase
+      %M - percent messages in this phase     %L - percent message lengths in this phase
+      %R - percent reductions in this phase
+   Total Mflop/s: 10e-6 * (sum of flops over all processors)/(max time over all processors)
+------------------------------------------------------------------------------------------------------------------------
+Event                Count      Time (sec)     Flops                             --- Global ---  --- Stage ---   Total
+                   Max Ratio  Max     Ratio   Max  Ratio  Mess   Avg len Reduct  %T %f %M %L %R  %T %f %M %L %R Mflop/s
+------------------------------------------------------------------------------------------------------------------------
+
+--- Event Stage 0: Main Stage
+
+PetscBarrier          22 1.0 3.0279e-05 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatMult            57600 1.0 2.2307e+02 1.0 3.47e+11 1.0 0.0e+00 0.0e+00 0.0e+00 20 66  0  0  0  20 66  0  0  0  1556
+MatCopy            57600 1.0 2.5026e+02 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00 22  0  0  0  0  22  0  0  0  0     0
+MatConvert             2 1.0 2.9942e-02 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatScale           57600 1.0 1.4952e+02 1.0 1.75e+11 1.0 0.0e+00 0.0e+00 0.0e+00 13 33  0  0  0  13 33  0  0  0  1171
+MatAssemblyBegin      25 1.0 8.5831e-06 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatAssemblyEnd        25 1.0 7.2753e-02 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatGetRow            128 1.0 6.6757e-06 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatLoad               25 1.0 9.7906e-01 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 5.0e+01  0  0  0  0 21   0  0  0  0 21     0
+MatAXPY            57600 1.0 2.8675e+02 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00 25  0  0  0  0  25  0  0  0  0     0
+VecView                1 1.0 8.7786e-04 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecNorm               20 1.0 1.0017e-02 1.0 2.11e+06 1.0 0.0e+00 0.0e+00 2.0e+01  0  0  0  0  8   0  0  0  0  8   211
+VecScale          115280 1.0 8.0138e-02 1.0 1.28e+08 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0  1600
+VecCopy           144100 1.0 7.2250e+00 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  1  0  0  0  0   1  0  0  0  0     0
+VecSet             28851 1.0 1.6618e+00 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecAXPY           144090 1.0 2.7466e+00 1.0 3.30e+09 1.0 0.0e+00 0.0e+00 0.0e+00  0  1  0  0  0   0  1  0  0  0  1200
+VecAssemblyBegin      46 1.0 1.8048e-04 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 1.4e+02  0  0  0  0 57   0  0  0  0 57     0
+VecAssemblyEnd        46 1.0 2.0266e-05 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecPointwiseMult      10 1.0 8.3065e-04 1.0 5.27e+05 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0   635
+VecLoad               16 1.0 2.0707e-03 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 4.5e+01  0  0  0  0 19   0  0  0  0 19     0
+VecScatterBegin        1 1.0 7.7009e-05 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+BGCStep            28800 1.0 2.1379e+02 1.0 3.84e+08 1.0 0.0e+00 0.0e+00 0.0e+00 19  0  0  0  0  19  0  0  0  0     2
+TimeStepPhi           10 1.0 1.1279e+03 1.0 5.26e+11 1.0 0.0e+00 0.0e+00 0.0e+00100100  0  0  0 100100  0  0  0   466
+------------------------------------------------------------------------------------------------------------------------
+
+Memory usage is given in bytes:
+
+Object Type          Creations   Destructions     Memory  Descendants' Mem.
+Reports information only for process 0.
+
+--- Event Stage 0: Main Stage
+
+              Matrix    27             27    970576572     0
+              Viewer    43             42        30240     0
+              Vector    41             41     11637992     0
+      Vector Scatter     1              1          620     0
+           Index Set     1              1          736     0
+========================================================================================================================
+Average time to get PetscTime(): 9.53674e-08
+#PETSc Option Table entries:
+-Metos3DBoundaryConditionCount 2
+-Metos3DBoundaryConditionInputDirectory data/TMM/2.8/Forcing/BoundaryCondition/
+-Metos3DBoundaryConditionName Latitude,IceCover
+-Metos3DDebugLevel 1
+-Metos3DDomainConditionCount 2
+-Metos3DDomainConditionInputDirectory data/TMM/2.8/Forcing/DomainCondition/
+-Metos3DDomainConditionName LayerDepth,LayerHeight
+-Metos3DGeometryType Profile
+-Metos3DIceCoverCount 12
+-Metos3DIceCoverFileFormat fice_$02d.petsc
+-Metos3DLatitudeCount 1
+-Metos3DLatitudeFileFormat latitude.petsc
+-Metos3DLayerDepthCount 1
+-Metos3DLayerDepthFileFormat z.petsc
+-Metos3DLayerHeightCount 1
+-Metos3DLayerHeightFileFormat dz.petsc
+-Metos3DMatrixCount 12
+-Metos3DMatrixExplicitFileFormat Ae_$02d.petsc
+-Metos3DMatrixImplicitFileFormat Ai_$02d.petsc
+-Metos3DMatrixInputDirectory data/TMM/2.8/Transport/Matrix5_4/1dt/
+-Metos3DParameterCount 5
+-Metos3DParameterValue 0.02,2.0,0.5,30.0,0.858
+-Metos3DProfileIndexEndFile gEndIndices.bin
+-Metos3DProfileIndexStartFile gStartIndices.bin
+-Metos3DProfileInputDirectory data/TMM/2.8/Geometry/
+-Metos3DProfileMaskFile landSeaMask.petsc
+-Metos3DProfileVolumeFile volumes.petsc
+-Metos3DSolverType Spinup
+-Metos3DSpinupCount 10
+-Metos3DSpinupMonitor
+-Metos3DTimeStep 0.0003472222222222
+-Metos3DTimeStepCount 2880
+-Metos3DTimeStepStart 0.0
+-Metos3DTracerCount 1
+-Metos3DTracerInitValue 2.17e+0
+-Metos3DTracerOutputDirectory work/
+-Metos3DTracerOutputFile profile.N.petsc
+-Metos3DTransportType Matrix
+-log_summary
+#End of PETSc Option Table entries
+Compiled without FORTRAN kernels
+Compiled with full precision matrices (default)
+sizeof(short) 2 sizeof(int) 4 sizeof(long) 8 sizeof(void*) 8 sizeof(PetscScalar) 8 sizeof(PetscInt) 4
+Configure run at: Thu Dec 18 09:45:10 2014
+Configure options: PETSC_DIR=/sfs/fs3/sw/petsc/petsc-3.3-p4 PETSC_ARCH=linux-intel-opt --with-gnu-compilers=0 --with-c++-support=1 --with-c-support=1 --with-fortran=1 --CXX=mpiicpc --CC=mpiicc --FC=mpiifort --with-blas-lapack-dir=/opt/intel/mkl/lib/intel64 --with-debugging=0
+-----------------------------------------
+Libraries compiled on Thu Dec 18 09:45:10 2014 on nesh-fe2 
+Machine characteristics: Linux-2.6.32-358.18.1.el6.x86_64-x86_64-with-redhat-6.4-Santiago
+Using PETSc directory: /sfs/fs3/sw/petsc/petsc-3.3-p4
+Using PETSc arch: linux-intel-opt
+-----------------------------------------
+
+Using C compiler: mpiicc  -wd1572 -O3  ${COPTFLAGS} ${CFLAGS}
+Using Fortran compiler: mpiifort  -O3   ${FOPTFLAGS} ${FFLAGS} 
+-----------------------------------------
+
+Using include paths: -I/sfs/fs3/sw/petsc/petsc-3.3-p4/linux-intel-opt/include -I/sfs/fs3/sw/petsc/petsc-3.3-p4/include -I/sfs/fs3/sw/petsc/petsc-3.3-p4/include -I/sfs/fs3/sw/petsc/petsc-3.3-p4/linux-intel-opt/include -I/opt/intel//impi/4.1.1.036/intel64/include
+-----------------------------------------
+
+Using C linker: mpiicc
+Using Fortran linker: mpiifort
+Using libraries: -Wl,-rpath,/sfs/fs3/sw/petsc/petsc-3.3-p4/linux-intel-opt/lib -L/sfs/fs3/sw/petsc/petsc-3.3-p4/linux-intel-opt/lib -lpetsc -lX11 -lpthread -Wl,-rpath,/opt/intel/mkl/lib/intel64 -L/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread -L/opt/intel/impi/4.1.1.036/intel64/lib -L/opt/intel/composer_xe_2013_sp1.0.080/compiler/lib/intel64 -L/opt/intel/composer_xe_2013_sp1.0.080/ipp/lib/intel64 -L/opt/intel/composer_xe_2013_sp1.0.080/mkl/lib/intel64 -L/opt/intel/composer_xe_2013_sp1.0.080/tbb/lib/intel64/gcc4.4 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.7 -Wl,-rpath,/sfs/fs3/sw/petsc/petsc-3.3-p4/-Xlinker -Wl,-rpath,/opt/intel/impi/4.1.1.036/intel64/lib -Wl,-rpath,/opt/intel/mpi-rt/4.1 -lifport -lifcore -lm -lm -lmpigc4 -ldl -lmpigf -lmpi -lmpigi -lrt -lpthread -limf -lsvml -lirng -lipgo -ldecimal -lcilkrts -lstdc++ -lgcc_s -lirc -lirc_s -ldl 
+-----------------------------------------
+
