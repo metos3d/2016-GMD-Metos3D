@@ -1,6 +1,6 @@
 #
 # Metos3D: A Marine Ecosystem Toolkit for Optimization and Simulation in 3-D
-# Copyright (C) 2012  Jaroslaw Piwonski, CAU, jpi@informatik.uni-kiel.de
+# Copyright (C) 2014  Jaroslaw Piwonski, CAU, jpi@informatik.uni-kiel.de
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -30,14 +30,14 @@
 -Metos3DProfileIndexEndFile                         gEndIndices.bin
 
 # bgc tracer
--Metos3DTracerCount                                 2
--Metos3DTracerInitValue                             2.17e+0,1.e-4
+-Metos3DTracerCount                                 1
+-Metos3DTracerInitValue                             2.17e+0
 #-Metos3DTracerOutputDirectory                       work/
-#-Metos3DTracerOutputFile                            profile.PO4.petsc,profile.DOP.petsc
+#-Metos3DTracerOutputFile                            profile.N.petsc
 
 # bgc parameter
--Metos3DParameterCount                              7
--Metos3DParameterValue                              0.5,2.0,0.67,0.5,30.0,0.02,0.858
+-Metos3DParameterCount                              5
+-Metos3DParameterValue                              0.02,2.0,0.5,30.0,0.858
 
 # bgc boudary conditions
 -Metos3DBoundaryConditionCount                      2
@@ -88,4 +88,3 @@
 #-Metos3DNewton_ksp_type                             gmres
 #-Metos3DNewton_ksp_monitor
 #-Metos3DNewton_ksp_view
-
