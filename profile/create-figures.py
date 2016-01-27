@@ -31,8 +31,10 @@ def read_profile_data(filepath):
 			linematch = re.search(r"------------------------------------------------------------------------------------------------------------------------", line)
 			if linematch:
 				break
-		lines.append(line)
+			lines.append(line)
 	f.close()
+# 	print lines
+	
 	# post process
 	data = []
 	total = 0.0
@@ -55,8 +57,8 @@ def create_profile_figure(modeldir):
 	print "create profile figure ..."
 	# read in profile data
 	(total, data) = read_profile_data("%s/work/profile.%s.out" % (modeldir, modeldir))
-
 # 	print total, data
+
 	# sort
 	order = ["BGCStep", "MatCopy", "MatScale", "MatAXPY", "MatMult"]
 	def new_order(t1, t2):

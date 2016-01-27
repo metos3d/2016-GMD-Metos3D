@@ -4,7 +4,7 @@
 
 ### [solver/](solver/)
 
-Spin-up and Newton-Krylov solver experiments for the MITgcm-PO4-DOP model and the N, N-DOP, NP-DOP, NPZ-DOP, NPZD-DOP model hierarchy
+Spin-up and Newton-Krylov solver experiments
 
 ### [profile/](profile/)
 
