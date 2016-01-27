@@ -415,6 +415,7 @@ def read_nk_convergence_data(nmax, filepath):
 	print 'read Newton-Krylov convergence data ...'
 	# read file, parse and store
 	kspiter = 0
+	kspidx = []
 	ksplist = []
 	snesidx = []
 	sneslist = []
@@ -430,16 +431,19 @@ def read_nk_convergence_data(nmax, filepath):
 		kspmatch = re.search(r"^\s+(\d+) KSP Residual norm (\d+.\d+e[+-]\d+)", line)
 		if kspmatch:
 # 			print kspmatch.groups()
+			kspidx.append(kspiter)
 			ksplist.append(kspmatch.groups())
 			kspiter = kspiter + 1
 			if kspiter >= nmax:
 				break
 	f.close()
+	# debug	
+	print("read in %d data points ..." % kspiter)	
 	# retrieve values
 	kspval = map(lambda x: x[1], ksplist)
 	snesval = map(lambda x: x[1], sneslist)
 	# return values
-	return [kspval, snesidx, snesval]
+	return [kspidx, kspval, snesidx, snesval]
 
 #
 #	read_sp_convergence_data
@@ -449,12 +453,14 @@ def read_sp_convergence_data(nmax, filepath):
 	print 'read spin-up convergence data ...'
     # read file, parse and store
 	spiter = 0
+	spidx = []
 	splist = []
 	f = open(filepath, 'r')
 	for line in f:
 		spmatch = re.search(r"^\s+\d+.\d+s (\d+) Spinup Function norm (\d+.\d+e[+-]\d+) (\d+.\d+e[+-]\d+)", line)
 		if spmatch:
 # 			print line,
+			spidx.append(spiter)
 			splist.append(spmatch.groups())
 			spiter = spiter + 1
 			if spiter >= nmax:
@@ -463,11 +469,13 @@ def read_sp_convergence_data(nmax, filepath):
 				continue
 			break
 	f.close()
+	# debug	
+	print("read in %d data points ..." % spiter)
     # retrieve values
 	spval = map(lambda x: x[1], splist)
-	spvalweight = map(lambda x: x[2], splist)
+	spvalw = map(lambda x: x[2], splist)
 	# return values
-	return [spval, spvalweight]
+	return [spidx, spval, spvalw]
 
 #
 #	create_convergence_figure
@@ -478,15 +486,8 @@ def create_convergence_figure(modeldir):
 	# set max data points
 	nmax = 10000
 	# read convergence data
-	nk_conv_data = read_nk_convergence_data(nmax, "%s/work/newton.%s.out" % (modeldir, modeldir))
-	sp_conv_data = read_sp_convergence_data(nmax, "%s/work/spinup.%s.out" % (modeldir, modeldir))	
-	# retrieve values
-	kspval = nk_conv_data[0]
-	snesidx = nk_conv_data[1]
-	snesval = nk_conv_data[2]
-	spval = sp_conv_data[0]
-	spvalweight = sp_conv_data[1]
-
+	(kspidx, kspval, snesidx, snesval) = read_nk_convergence_data(nmax, "%s/work/newton.%s.out" % (modeldir, modeldir))
+	(spidx, spval, spvalw) = read_sp_convergence_data(nmax, "%s/work/spinup.%s.out" % (modeldir, modeldir))	
 	# set dimensions
 	# plot
 	xrange = range(0, nmax)
@@ -500,16 +501,20 @@ def create_convergence_figure(modeldir):
 	gs = gsp.GridSpec(1, 2, width_ratios=[2,1])
 	ax1 = plt.subplot(gs[0])
 	ax2 = plt.subplot(gs[1])
+	
 	# spinup
-	p1, = ax1.semilogy(xrange[ax1l:ax1r], spval[ax1l:ax1r], "k-", linewidth = 1.0)
-	ax2.semilogy(xrange[ax2l:ax2r], spval[ax2l:ax2r], "k-", linewidth = 1.0)
-	p2, = ax1.semilogy(xrange[ax1l:ax1r], spvalweight[ax1l:ax1r], "k-", linewidth = 1.0)
-	ax2.semilogy(xrange[ax2l:ax2r], spvalweight[ax2l:ax2r], "k-", linewidth = 1.0)
+	p1, = ax1.semilogy(spidx[ax1l:ax1r], spval[ax1l:ax1r], "k-", linewidth = 1.0)
+	ax2.semilogy(spidx[ax2l:ax2r], spval[ax2l:ax2r], "k-", linewidth = 1.0)
+	p2, = ax1.semilogy(spidx[ax1l:ax1r], spvalw[ax1l:ax1r], "k-", linewidth = 1.0)
+	ax2.semilogy(spidx[ax2l:ax2r], spvalw[ax2l:ax2r], "k-", linewidth = 1.0)
+
 	# KSP
-	p3, = ax1.semilogy(xrange[ax1l:ax1r], kspval[ax1l:ax1r], "k-", linewidth = 1.0)
-	ax2.semilogy(xrange[ax2l:ax2r], kspval[ax2l:ax2r], "k-", linewidth = 1.0)
+	p3, = ax1.semilogy(kspidx[ax1l:ax1r], kspval[ax1l:ax1r], "k-", linewidth = 1.0)
+	ax2.semilogy(kspidx[ax2l:ax2r], kspval[ax2l:ax2r], "k-", linewidth = 1.0)
+
 	# SNES
 	ax1.semilogy(snesidx, snesval, color = "k", marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = None)
+	
 	# x
 	ax1xmaj = range(0, 1000, 100)
 	ax1.set_xticks(ax1xmaj)
@@ -520,8 +525,8 @@ def create_convergence_figure(modeldir):
 	# common x label
 	f.suptitle("Model years", y = 0.035)
 	# y
-	ax1.set_ylim([10e-6, 10e+8])
-	ax2.set_ylim([10e-6, 10e+8])
+	ax1.set_ylim([10e-7, 10e+8])
+	ax2.set_ylim([10e-7, 10e+8])
 	ax2.set_yticklabels([])
 # 	ytext = [r"10\textsuperscript{-5}", r"10\textsuperscript{-4}", r"10\textsuperscript{-3}",
 # 			 r"10\textsuperscript{-2}", r"10\textsuperscript{-1}", r"10\textsuperscript{0}",
@@ -546,6 +551,7 @@ def create_convergence_figure(modeldir):
 # 	ll1.set_mew(1.0)
 	# adjust subplots
 	plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.00, hspace=None)
+	
 	# write to file
 	plt.savefig("figures/convergnece.%s.pdf" % modeldir, bbox_inches="tight")
 

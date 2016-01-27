@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -T intmpi
+#PBS -b 1
+#PBS -l cpunum_job=24
+#PBS -l elapstim_req=01:00:00
+#PBS -l memsz_job=10gb
+#PBS -N profile.MITgcm-PO4-DOP
+#PBS -o work/profile.MITgcm-PO4-DOP.out
+#PBS -e work/profile.MITgcm-PO4-DOP.out
+#PBS -q clfocean
+#
+. ../petsc-3.3-p4.env
+#
+cd $PBS_O_WORKDIR
+#
+mpirun $NQSII_MPIOPTS -np 64 ./metos3d-simpack-MITgcm-PO4-DOP.exe option/profile.MITgcm-PO4-DOP.option -log_summary
