@@ -116,7 +116,7 @@ def create_samples(m3dprefix, argv):
 	# loop over tracers
 	for itracer in range(ntracer):
 		# get random values
-		val = npr.ranf(vol.shape)
+		val = 0.5 + 0.25 * npr.ranf(vol.shape)
 		# scale
 		val = masstracer * val / sum(val * volnorm)
 		# debug
@@ -132,7 +132,7 @@ def create_samples(m3dprefix, argv):
 #
 if __name__ == "__main__":
 	# no arguments?
-	if len(sys.argv) == 1:
+	if len(sys.argv) <= 2:
 		# print usage and exit with code 1
 		print("usage: ./create-samples.py [MASS...] [TRACERS...]")
 		print("example:")

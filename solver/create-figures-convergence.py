@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib
 matplotlib.rc("font", **{"family" : "sans-serif"})
 matplotlib.rcParams.update({'font.size': 14})
-# matplotlib.rc("text", usetex = True)
+matplotlib.rc("text", usetex = True)
 matplotlib.use("PDF")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gsp
@@ -527,24 +527,23 @@ def create_convergence_figure(modeldir):
 	ax2.grid(True, which='major', axis='both', color='0.25', linestyle=':')
 	ax2.grid(True, which='minor', axis='x', color='0.25', linestyle=':')
 	# legend
-	leg1 = r"Spin-up, $|| \mathbf{y}_{l} - \mathbf{y}_{l-1} ||_2$"
-	leg2 = r"Spin-up, $|| \mathbf{y}_{l} - \mathbf{y}_{l-100} ||_{2,I \times \Omega}$"
+	leg1 = r"Spin-up"
 	leg3 = r"Newton-Krylov"
-# 	l1 = plt.figlegend([p1, p2, p3], [leg1, leg2, leg3], 1, numpoints = 3, bbox_to_anchor = (0.862, 0.899), prop={'size':15})
-# 	ll1 = l1.get_lines()[2]
-# 	ll1.set_marker("D")
-# 	ll1.set_ms(4.0)
-# 	ll1.set_mfc("None")
-# 	ll1.set_mew(1.0)
+# 	leg1 = r"Spin-up, $|| \mathbf{y}_{l} - \mathbf{y}_{l-1} ||_2$"
+# 	leg2 = r"Spin-up, $|| \mathbf{y}_{l} - \mathbf{y}_{l-100} ||_{2,I \times \Omega}$"
+# 	leg3 = r"Newton-Krylov"
+
+	l1 = plt.figlegend([p1, p3], [leg1, leg3], 1, numpoints = 3, bbox_to_anchor = (0.862, 0.899), prop={'size':15})
+	ll1 = l1.get_lines()[1]
+	ll1.set_marker("D")
+	ll1.set_ms(4.0)
+	ll1.set_mfc("None")
+	ll1.set_mew(1.0)
 	# adjust subplots
 	plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.00, hspace=None)
 	
 	# write to file
 	plt.savefig("figures/convergnece.%s.pdf" % modeldir, bbox_inches="tight")
-
-
-# 	# create conv plot
-# 	create_convergence_plot(1, nmax, nk_conv_data, sp_conv_data, 'convergence.MITgcm-PO4-DOP.pdf')
 
 #
 #   main
@@ -553,7 +552,7 @@ if __name__ == "__main__":
 	# no arguments?
 	if len(sys.argv) == 1:
 		# print usage and exit with code 1
-		print("usage: ./create-figure.py [MODELNAME...]")
+		print("usage: ./create-figure-convergence.py [MODELNAME...]")
 		sys.exit(1)
 	# model directory does not exist?
 	modeldir = sys.argv[1]
@@ -567,15 +566,4 @@ if __name__ == "__main__":
 	print("using %s model" % modeldir)
 	# create convergence plot
 	create_convergence_figure(modeldir)
-	
-# 
-# 	
-# 	print sp_conv_data
-	
-	
-#    z, dz, v3d = read_data()
-#     v3d = read_data()
-#     create_figures(v3d)
 
-# 	# set prefix
-# 	m3dprefix = os.path.expanduser('~/.metos3d')
