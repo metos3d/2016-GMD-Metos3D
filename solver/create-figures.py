@@ -13,18 +13,6 @@ matplotlib.use("PDF")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gsp
 
-########################################################################
-### output
-########################################################################
-
-# print_usage
-def print_usage():
-    print("usage: ./create-figure.py [MODELNAME...]")
-
-########################################################################
-### PETSc
-########################################################################
-
 #
 #   read_PETSc_vec
 #
@@ -505,15 +493,15 @@ def create_convergence_figure(modeldir):
 	# spinup
 	p1, = ax1.semilogy(spidx[ax1l:ax1r], spval[ax1l:ax1r], "k-", linewidth = 1.0)
 	ax2.semilogy(spidx[ax2l:ax2r], spval[ax2l:ax2r], "k-", linewidth = 1.0)
-	p2, = ax1.semilogy(spidx[ax1l:ax1r], spvalw[ax1l:ax1r], "k-", linewidth = 1.0)
-	ax2.semilogy(spidx[ax2l:ax2r], spvalw[ax2l:ax2r], "k-", linewidth = 1.0)
+# 	p2, = ax1.semilogy(spidx[ax1l:ax1r], spvalw[ax1l:ax1r], "k-", linewidth = 1.0)
+# 	ax2.semilogy(spidx[ax2l:ax2r], spvalw[ax2l:ax2r], "k-", linewidth = 1.0)
 
 	# KSP
 	p3, = ax1.semilogy(kspidx[ax1l:ax1r], kspval[ax1l:ax1r], "k-", linewidth = 1.0)
 	ax2.semilogy(kspidx[ax2l:ax2r], kspval[ax2l:ax2r], "k-", linewidth = 1.0)
 
 	# SNES
-	ax1.semilogy(snesidx, snesval, color = "k", marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = None)
+	ax1.semilogy(snesidx, snesval, color = "k", marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
 	
 	# x
 	ax1xmaj = range(0, 1000, 100)
@@ -524,17 +512,16 @@ def create_convergence_figure(modeldir):
 	ax2.set_xticklabels(ax2xmaj, **{"rotation":55.0, "rotation_mode":"anchor", "x":0.005, "y":0.005, "ha":"right"})
 	# common x label
 	f.suptitle("Model years", y = 0.035)
+
 	# y
-	ax1.set_ylim([10e-7, 10e+8])
-	ax2.set_ylim([10e-7, 10e+8])
+	ax1.set_ylim([10e-7, 10e+2])
+	ytext = [r"10\textsuperscript{%d}" % i for i in range(-7, 4)]
+	ax1.set_ylabel("Norm [$\mathrm{m\,mol\,P / m^3}$]")
+	ax1.set_yticklabels(ytext)
+
 	ax2.set_yticklabels([])
-# 	ytext = [r"10\textsuperscript{-5}", r"10\textsuperscript{-4}", r"10\textsuperscript{-3}",
-# 			 r"10\textsuperscript{-2}", r"10\textsuperscript{-1}", r"10\textsuperscript{0}",
-# 			 r"10\textsuperscript{1}", r"10\textsuperscript{2}"]
-# 	ax1.set_yticklabels(ytext)
-# 	ax1.set_ylabel("Norm [$\mathrm{m\,mol\,P / m^3}$]")
-# 	ax2.set_ylim([10e-6, 10e+1])
-# 	ax2.set_yticklabels([])
+	ax2.set_ylim([10e-7, 10e+2])
+
 	# grid
 	ax1.grid(True, which='major', axis='both', color='0.25', linestyle=':')
 	ax2.grid(True, which='major', axis='both', color='0.25', linestyle=':')
