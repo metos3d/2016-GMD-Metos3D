@@ -1,0 +1,4 @@
+
+     153.038s 0000 Spinup Function norm 4.328962677595e+01
+     153.083s 0001 Spinup Function norm 2.228472721859e+01
+     153.053s 0002 Spinup Function norm 1.286500993446e+01
