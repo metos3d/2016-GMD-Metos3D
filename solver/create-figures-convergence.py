@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python -W ignore
 
 import os
 import sys
@@ -94,6 +94,12 @@ def create_convergence_figure(modeldir):
 	# read convergence data
 	(kspidx, kspval, snesidx, snesval) = read_nk_convergence_data(nmax, "%s/work/newton.%s.out" % (modeldir, modeldir))
 	(spidx, spval, spvalw) = read_sp_convergence_data(nmax, "%s/work/spinup.%s.out" % (modeldir, modeldir))	
+	
+	print kspidx
+	print kspval
+	print snesidx
+	print snesval
+	
 	# set dimensions
 	# plot
 	xrange = range(0, nmax)
@@ -119,7 +125,7 @@ def create_convergence_figure(modeldir):
 	ax2.semilogy(kspidx[ax2l:ax2r], kspval[ax2l:ax2r], "k-", linewidth = 1.0)
 
 	# SNES
-	ax1.semilogy(snesidx, snesval, color = "k", marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
+# 	ax1.semilogy(snesidx, snesval, color = "k", marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
 	
 	# x
 	ax1xmaj = range(0, 1000, 100)
@@ -170,7 +176,7 @@ if __name__ == "__main__":
 	# no arguments?
 	if len(sys.argv) == 1:
 		# print usage and exit with code 1
-		print("usage: ./create-figure-convergence.py [MODELNAME...]")
+		print("usage: %s [MODELNAME...]" % sys.argv[0])
 		sys.exit(1)
 	# model directory does not exist?
 	modeldir = sys.argv[1]

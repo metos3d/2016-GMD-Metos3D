@@ -273,7 +273,7 @@ if __name__ == "__main__":
 	# no arguments?
 	if len(sys.argv) <= 2:
 		# print usage and exit with code 1
-		print("usage: ./create-figure-surface.py [MODELNAME...] [TRACER...]")
+		print("usage: %s [MODELNAME...] [TRACER...]" % sys.argv[0])
 		sys.exit(1)
 	# model directory does not exist?
 	modeldir = sys.argv[1]
