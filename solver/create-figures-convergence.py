@@ -93,12 +93,14 @@ def create_convergence_figure(modeldir):
 	nmax = 10000
 	# read convergence data
 	(kspidx, kspval, snesidx, snesval) = read_nk_convergence_data(nmax, "%s/work/newton.%s.out" % (modeldir, modeldir))
+	# NPZ-DOP or NPZD-DOP
+	twotimesnewton = False
+	if modeldir in ['NPZ-DOP', 'NPZD-DOP']:
+		twotimesnewton = True
+		print("read in second newton experiments ...")
+		(kspidx2, kspval2, snesidx2, snesval2) = read_nk_convergence_data(nmax, "%s/work/newton.2.%s.out" % (modeldir, modeldir))
+	# spinup
 	(spidx, spval, spvalw) = read_sp_convergence_data(nmax, "%s/work/spinup.%s.out" % (modeldir, modeldir))	
-	
-	print kspidx
-	print kspval
-	print snesidx
-	print snesval
 	
 	# set dimensions
 	# plot
@@ -117,16 +119,20 @@ def create_convergence_figure(modeldir):
 	# spinup
 	p1, = ax1.semilogy(spidx[ax1l:ax1r], spval[ax1l:ax1r], "k-", linewidth = 1.0)
 	ax2.semilogy(spidx[ax2l:ax2r], spval[ax2l:ax2r], "k-", linewidth = 1.0)
-# 	p2, = ax1.semilogy(spidx[ax1l:ax1r], spvalw[ax1l:ax1r], "k-", linewidth = 1.0)
-# 	ax2.semilogy(spidx[ax2l:ax2r], spvalw[ax2l:ax2r], "k-", linewidth = 1.0)
 
 	# KSP
-	p3, = ax1.semilogy(kspidx[ax1l:ax1r], kspval[ax1l:ax1r], "k-", linewidth = 1.0)
+	p2, = ax1.semilogy(kspidx[ax1l:ax1r], kspval[ax1l:ax1r], "k-", linewidth = 1.0)
 	ax2.semilogy(kspidx[ax2l:ax2r], kspval[ax2l:ax2r], "k-", linewidth = 1.0)
+	# second experiment
+	if twotimesnewton:
+		p3, = ax1.semilogy(kspidx2[ax1l:ax1r], kspval2[ax1l:ax1r], "-", linewidth = 1.0, color = "k")
+		ax2.semilogy(kspidx2[ax2l:ax2r], kspval2[ax2l:ax2r], "-", linewidth = 1.0, color = "k")
 
 	# SNES
-# 	ax1.semilogy(snesidx, snesval, color = "k", marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
-	
+	ax1.semilogy(snesidx, snesval, marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
+	if twotimesnewton:
+		ax1.semilogy(snesidx2, snesval2, marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
+		
 	# x
 	ax1xmaj = range(0, 1000, 100)
 	ax1.set_xticks(ax1xmaj)
@@ -152,12 +158,16 @@ def create_convergence_figure(modeldir):
 	ax2.grid(True, which='minor', axis='x', color='0.25', linestyle=':')
 	# legend
 	leg1 = r"Spin-up"
-	leg3 = r"Newton-Krylov"
+	leg2 = r"Newton-Krylov"
 # 	leg1 = r"Spin-up, $|| \mathbf{y}_{l} - \mathbf{y}_{l-1} ||_2$"
 # 	leg2 = r"Spin-up, $|| \mathbf{y}_{l} - \mathbf{y}_{l-100} ||_{2,I \times \Omega}$"
 # 	leg3 = r"Newton-Krylov"
 
-	l1 = plt.figlegend([p1, p3], [leg1, leg3], 1, numpoints = 3, bbox_to_anchor = (0.862, 0.899), prop={'size':15})
+	l1 = plt.figlegend([p1, p2], [leg1, leg2], 1, numpoints = 3, bbox_to_anchor = (0.862, 0.899), prop={'size':15})
+# 	if twotimesnewton:
+# 		leg3 = r"Newton-Krylov"
+# 		l1 = plt.figlegend([p1, p2, p3], [leg1, leg2, leg3], 1, numpoints = 3, bbox_to_anchor = (0.862, 0.899), prop={'size':15})
+
 	ll1 = l1.get_lines()[1]
 	ll1.set_marker("D")
 	ll1.set_ms(4.0)
