@@ -31,9 +31,9 @@
 
 # bgc tracer
 -Metos3DTracerCount                                 5
--Metos3DTracerInitValue                             2.17e+0,1.e-4,1.e-4,1.e-4,1.e-4
+-Metos3DTracerInitValue                             0.4340e+0,0.4340e+0,0.4340e+0,0.4340e+0,0.4340e+0
 -Metos3DTracerOutputDirectory                       work/
--Metos3DTracerOutputFile                            newton.200.N.petsc,newton.200.P.petsc,newton.200.Z.petsc,newton.200.D.petsc,newton.200.DOP.petsc
+-Metos3DTracerOutputFile                            newton.2.N.petsc,newton.2.P.petsc,newton.2.Z.petsc,newton.2.D.petsc,newton.2.DOP.petsc
 
 # bgc parameter
 -Metos3DParameterCount                              18
@@ -81,7 +81,6 @@
 # solver (PETSc)
 -Metos3DSolverType                                  Newton
 -Metos3DNewton_snes_type                            ls
--Metos3DNewton_snes_max_it                          200
 -Metos3DNewton_snes_view
 -Metos3DNewton_snes_ksp_ew
 -Metos3DNewton_snes_monitor
