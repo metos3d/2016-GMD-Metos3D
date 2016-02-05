@@ -86,19 +86,13 @@ def read_sp_convergence_data(nmax, filepath):
 #
 #	create_convergence_figure
 #
-def create_convergence_figure(modeldir):
+def create_convergence_figure(modeldir, prefix):
 	# debug
 	print "create convergence figure ..."
 	# set max data points
 	nmax = 10000
 	# read convergence data
-	(kspidx, kspval, snesidx, snesval) = read_nk_convergence_data(nmax, "%s/work/newton.%s.out" % (modeldir, modeldir))
-	# NPZ-DOP or NPZD-DOP
-	twotimesnewton = False
-	if modeldir in ['NPZ-DOP', 'NPZD-DOP']:
-		twotimesnewton = True
-		print("read in second newton experiments ...")
-		(kspidx2, kspval2, snesidx2, snesval2) = read_nk_convergence_data(nmax, "%s/work/newton.2.%s.out" % (modeldir, modeldir))
+	(kspidx, kspval, snesidx, snesval) = read_nk_convergence_data(nmax, "%s/work/%s%s.out" % (modeldir, prefix, modeldir))
 	# spinup
 	(spidx, spval, spvalw) = read_sp_convergence_data(nmax, "%s/work/spinup.%s.out" % (modeldir, modeldir))	
 	
@@ -106,8 +100,9 @@ def create_convergence_figure(modeldir):
 	# plot
 	xrange = range(0, nmax)
 	# subplot
-	ax1l, ax1r = (0, 1000)
-	ax2l, ax2r = (1000, nmax)
+	nsplit = 1000
+	ax1l, ax1r = (0, nsplit)
+	ax2l, ax2r = (nsplit, nmax)
 
 	# subplots
 	figid = 1
@@ -123,16 +118,23 @@ def create_convergence_figure(modeldir):
 	# KSP
 	p2, = ax1.semilogy(kspidx[ax1l:ax1r], kspval[ax1l:ax1r], "k-", linewidth = 1.0)
 	ax2.semilogy(kspidx[ax2l:ax2r], kspval[ax2l:ax2r], "k-", linewidth = 1.0)
-	# second experiment
-	if twotimesnewton:
-		p3, = ax1.semilogy(kspidx2[ax1l:ax1r], kspval2[ax1l:ax1r], "-", linewidth = 1.0, color = "k")
-		ax2.semilogy(kspidx2[ax2l:ax2r], kspval2[ax2l:ax2r], "-", linewidth = 1.0, color = "k")
 
 	# SNES
-	ax1.semilogy(snesidx, snesval, marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
-	if twotimesnewton:
-		ax1.semilogy(snesidx2, snesval2, marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
-		
+	if max(snesidx) >= nsplit:
+		# get index lists first NK
+		idxlow = np.where(np.array(snesidx)<nsplit)[0]
+		idxhigh = np.where(np.array(snesidx)>=nsplit)[0]
+		# set arrays first NK
+		snesidxlow = [snesidx[i] for i in idxlow]
+		snesidxhigh = [snesidx[i] for i in idxhigh]
+		snesvallow = [snesval[i] for i in idxlow]
+		snesvalhigh = [snesval[i] for i in idxhigh]
+		# plot
+		ax1.semilogy(snesidxlow, snesvallow, marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
+		ax2.semilogy(snesidxhigh, snesvalhigh, marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
+	else:
+		ax1.semilogy(snesidx, snesval, marker = "D", ms = 4.0, mfc = "None", mec = "k", mew = 1.0, linewidth = 0)
+
 	# x
 	ax1xmaj = range(0, 1000, 100)
 	ax1.set_xticks(ax1xmaj)
@@ -159,15 +161,7 @@ def create_convergence_figure(modeldir):
 	# legend
 	leg1 = r"Spin-up"
 	leg2 = r"Newton-Krylov"
-# 	leg1 = r"Spin-up, $|| \mathbf{y}_{l} - \mathbf{y}_{l-1} ||_2$"
-# 	leg2 = r"Spin-up, $|| \mathbf{y}_{l} - \mathbf{y}_{l-100} ||_{2,I \times \Omega}$"
-# 	leg3 = r"Newton-Krylov"
-
 	l1 = plt.figlegend([p1, p2], [leg1, leg2], 1, numpoints = 3, bbox_to_anchor = (0.862, 0.899), prop={'size':15})
-# 	if twotimesnewton:
-# 		leg3 = r"Newton-Krylov"
-# 		l1 = plt.figlegend([p1, p2, p3], [leg1, leg2, leg3], 1, numpoints = 3, bbox_to_anchor = (0.862, 0.899), prop={'size':15})
-
 	ll1 = l1.get_lines()[1]
 	ll1.set_marker("D")
 	ll1.set_ms(4.0)
@@ -177,7 +171,7 @@ def create_convergence_figure(modeldir):
 	plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.00, hspace=None)
 	
 	# write to file
-	plt.savefig("figures/convergnece.%s.pdf" % modeldir, bbox_inches="tight")
+	plt.savefig("figures/convergence.%s.pdf" % modeldir, bbox_inches="tight")
 
 #
 #   main
@@ -186,7 +180,7 @@ if __name__ == "__main__":
 	# no arguments?
 	if len(sys.argv) == 1:
 		# print usage and exit with code 1
-		print("usage: %s [MODELNAME...]" % sys.argv[0])
+		print("usage: %s [MODELNAME...] [PREFIX...]" % sys.argv[0])
 		sys.exit(1)
 	# model directory does not exist?
 	modeldir = sys.argv[1]
@@ -196,8 +190,14 @@ if __name__ == "__main__":
 		sys.exit(2)
 	# strip trailing slash if any
 	modeldir = os.path.normpath(modeldir)
+	# check if we have a *given* prefix
+	if len(sys.argv) == 3:
+		prefix = sys.argv[2]
+	else:
+		prefix = "newton."
 	# debug
-	print("using %s model" % modeldir)
+	print("using '%s' model" % modeldir)
+	print("using prefix ... '%s'" % prefix)
 	# create convergence plot
-	create_convergence_figure(modeldir)
+	create_convergence_figure(modeldir, prefix)
 

@@ -31,9 +31,9 @@
 
 # bgc tracer
 -Metos3DTracerCount                                 5
--Metos3DTracerInitValue                             0.4340e+0,0.4340e+0,0.4340e+0,0.4340e+0,0.4340e+0
+-Metos3DTracerInitValue                             2.17e+0,1.e-4,1.e-4,1.e-4,1.e-4
 -Metos3DTracerOutputDirectory                       work/
--Metos3DTracerOutputFile                            newton.2.N.petsc,newton.2.P.petsc,newton.2.Z.petsc,newton.2.D.petsc,newton.2.DOP.petsc
+-Metos3DTracerOutputFile                            newton.N.petsc,newton.P.petsc,newton.Z.petsc,newton.D.petsc,newton.DOP.petsc
 
 # bgc parameter
 -Metos3DParameterCount                              18
@@ -87,5 +87,5 @@
 -Metos3DNewton_snes_linesearch_monitor
 -Metos3DNewton_ksp_type                             gmres
 -Metos3DNewton_ksp_monitor
--Metos3DNewton_ksp_view
+#-Metos3DNewton_ksp_view
 

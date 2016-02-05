@@ -1,6 +1,7 @@
 #!/usr/bin/env python -W ignore
 
 import os
+import sys
 import numpy as np
 
 # set model list
@@ -112,6 +113,15 @@ Model			&	{$\| \mathbf{y}_{\mathrm{SP}} - \mathbf{y}_{\mathrm{NK}} \|_2$}	& 	{$\
 if __name__ == "__main__":	
 	# debug
 # 	print("comparing models ... " + str.join(', ', modellist))
+	# set prefix for newton experiments
+	if len(sys.argv) == len(modellist)+1:
+		prefixlist = sys.argv[1:len(modellist)+1]
+	else:
+		prefixlist = ('newton. '*len(modellist)).split(' ')
+		prefixlist.pop()
+	# debug
+# 	print("using given prefix for model ... %s" % prefixlist)
+
 	# read in data
 # 	print("read in data ...")
 	# diffs
@@ -125,7 +135,7 @@ if __name__ == "__main__":
 			tracer = tracerlist[i][j]
 			# read vectors
 			vsp = read_PETSc_vec("%s/work/spinup.%s.petsc" % (modeldir, tracer))
-			vnk = read_PETSc_vec("%s/work/newton.%s.petsc" % (modeldir, tracer))
+			vnk = read_PETSc_vec("%s/work/%s%s.petsc" % (modeldir, prefixlist[i], tracer))
 			# compute diff
 			vdiff = vsp - vnk
 			# add to list
@@ -139,6 +149,3 @@ if __name__ == "__main__":
 	# create table
 	create_table(vlist, vol)
 	
-
-
-# Model			&	{$\| \mathbf{y}_{SP} - \mathbf{y}_{NK} \|_2$}	& 	{$\| \mathbf{y}_{SP} - \mathbf{y}_{NK} \|_{2, \Omega}$}	\\

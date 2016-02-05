@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib
 matplotlib.rc("font", **{"family" : "sans-serif"})
 matplotlib.rcParams.update({'font.size': 14})
-# matplotlib.rc("text", usetex = True)
+matplotlib.rc("text", usetex = True)
 matplotlib.use("PDF")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gsp
@@ -75,13 +75,13 @@ def read_PETSc_mat(file):
 #
 #   read_data
 #
-def read_data(m3dprefix, modeldir, tracer):
+def read_data(m3dprefix, modeldir, prefix, tracer):
     # debug
 	print("reading data ... %s" % tracer)
     
     # v1d, z, dz, lsm (land sea mask)
 	v1dsp = read_PETSc_vec("%s/work/spinup.%s.petsc" % (modeldir, tracer))
-	v1dnk = read_PETSc_vec("%s/work/newton.%s.petsc" % (modeldir, tracer))
+	v1dnk = read_PETSc_vec("%s/work/%s%s.petsc" % (modeldir, prefix, tracer))
     
 	v1d = np.fabs(v1dsp - v1dnk)
 
@@ -273,7 +273,7 @@ if __name__ == "__main__":
 	# no arguments?
 	if len(sys.argv) <= 2:
 		# print usage and exit with code 1
-		print("usage: %s [MODELNAME...] [TRACER...]" % sys.argv[0])
+		print("usage: %s [MODELNAME...] [TRACER...] [PREFIX...]" % sys.argv[0])
 		sys.exit(1)
 	# model directory does not exist?
 	modeldir = sys.argv[1]
@@ -289,8 +289,15 @@ if __name__ == "__main__":
 	m3dprefix = os.path.expanduser('~/.metos3d')
 	# set tracer
 	tracer = sys.argv[2]
+	# check if we have a *given* prefix
+	if len(sys.argv) == 4:
+		prefix = sys.argv[3]
+	else:
+		prefix = "newton."
+	# debug
+	print("using prefix ... '%s'" % prefix)
 	# read data
-	v3d = read_data(m3dprefix, modeldir, tracer)
+	v3d = read_data(m3dprefix, modeldir, prefix, tracer)
 	# create figure
 	create_figures(m3dprefix, modeldir, tracer, v3d)
 		
