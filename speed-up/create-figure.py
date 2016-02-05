@@ -80,7 +80,7 @@ def figure_read_nesh_fe_data():
 #
 def figure_read_spk_data():
 	# debug
-	print("Reading SPK data ...")
+	print("Reading TMM data ...")
 	# read, parse
 	f = open("work/spkwall.out", "r")
 	# go through lines
@@ -139,8 +139,8 @@ def figure_create_plot_speedup(nesh_fe_data, spk_data, load_data):
     # legend
     leg1 = "Ideal"
     leg2 = "Best possible"
-    leg3 = r"Metos3d"
-    leg4 = r"SPK TMM"
+    leg3 = r"Metos3D"
+    leg4 = r"TMM"
     plt.legend([p1,p2,p3,p4],[leg1,leg2,leg3,leg4], loc=2, numpoints=1, fontsize = 12.0)
     # save
     plt.figure(1)
