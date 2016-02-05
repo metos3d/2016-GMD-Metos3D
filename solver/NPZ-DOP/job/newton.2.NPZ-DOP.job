@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -T intmpi
+#PBS -b 4
+#PBS -l cpunum_job=16
+#PBS -l elapstim_req=12:00:00
+#PBS -l memsz_job=10gb
+#PBS -N newton.2.NPZ-DOP
+#PBS -o work/newton.2.NPZ-DOP.out
+#PBS -e work/newton.2.NPZ-DOP.out
+#PBS -q clfocean
+#
+module load intel intelmpi
+module load petsc-3.3-p4-intel
+#
+cd $PBS_O_WORKDIR
+#
+mpirun $NQSII_MPIOPTS -np 64 ./metos3d-simpack-NPZ-DOP.exe option/newton.2.NPZ-DOP.option
