@@ -144,7 +144,7 @@ def figure_create_plot_speedup(nesh_fe_data, spk_data, load_data):
     plt.legend([p1,p2,p3,p4],[leg1,leg2,leg3,leg4], loc=2, numpoints=1, fontsize = 12.0)
     # save
     plt.figure(1)
-    plt.savefig("figures/speed-up.pdf", bbox_inches="tight")
+    plt.savefig("figures/speedup.pdf", bbox_inches="tight")
 
 #
 #   figure_create_plot_efficiency
