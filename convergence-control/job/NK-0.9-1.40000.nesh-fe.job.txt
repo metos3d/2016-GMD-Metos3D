@@ -1,0 +1,13 @@
+#PBS -N NK-0.9-1.40000
+#PBS -j o
+#PBS -o work/NK-0.9-1.40000.out.txt
+#PBS -b 4
+#PBS -l cpunum_job=16
+#PBS -l elapstim_req=02:00:00
+#PBS -l memsz_job=32gb
+#PBS -T mpich
+#PBS -q clmedium
+cd $PBS_O_WORKDIR
+. job/de.uni-kiel.rz.nesh-fe.petsc-3.3-p5.opt.txt
+mpirun -n 64 -r ssh $NQSII_MPIOPTS ./metos3d-simpack-MITgcm-PO4-DOP.exe option/NK-0.9-1.40000.option.txt
+qstat -f ${PBS_JOBID/0:/}

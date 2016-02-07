@@ -1,0 +1,13 @@
+#PBS -N sample.00
+#PBS -b 4
+#PBS -l cpunum_job=16
+#PBS -l elapstim_req=01:00:00
+#PBS -l memsz_job=32gb
+#PBS -T mpich
+#PBS -j o
+#PBS -o work/metos3d.nesh-fe.sample.00.out.txt
+#PBS -q clfocean
+cd $PBS_O_WORKDIR
+. job/de.uni-kiel.rz.nesh-fe.petsc-3.3-p5.opt.txt
+mpirun -r ssh $NQSII_MPIOPTS -n 64 ./metos3d-simpack-MITgcm-PO4-DOP.exe option/sample.00.option.txt
+qstat -f ${PBS_JOBID/0:/}

@@ -1,0 +1,635 @@
+
+%NQSII(INFO): ------- Output from job:0000 -------
+  0 SNES Function norm 2.162763084091e+02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.162763084091e+02 
+    1 KSP Residual norm 4.294339930598e+01 
+  1 SNES Function norm 3.825989609142e+01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 3.825989609142e+01 
+    1 KSP Residual norm 1.852413144880e+01 
+    2 KSP Residual norm 1.222693740462e+01 
+    3 KSP Residual norm 9.610912327771e+00 
+    4 KSP Residual norm 7.979845270228e+00 
+  2 SNES Function norm 9.440676262158e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 9.440676262158e+00 
+    1 KSP Residual norm 6.572437174216e+00 
+    2 KSP Residual norm 5.851413510631e+00 
+    3 KSP Residual norm 5.290710314166e+00 
+    4 KSP Residual norm 4.791960453991e+00 
+    5 KSP Residual norm 4.352638142297e+00 
+    6 KSP Residual norm 3.987351279083e+00 
+    7 KSP Residual norm 3.683063088866e+00 
+    8 KSP Residual norm 3.409126317967e+00 
+    9 KSP Residual norm 3.161475571633e+00 
+   10 KSP Residual norm 2.918155562426e+00 
+   11 KSP Residual norm 2.694603120898e+00 
+   12 KSP Residual norm 2.509916735929e+00 
+   13 KSP Residual norm 2.346515008948e+00 
+   14 KSP Residual norm 2.195612382990e+00 
+   15 KSP Residual norm 2.046555547302e+00 
+   16 KSP Residual norm 1.906134321257e+00 
+   17 KSP Residual norm 1.772836635819e+00 
+   18 KSP Residual norm 1.648138475918e+00 
+  3 SNES Function norm 4.102191516119e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 4.102191516119e+00 
+    1 KSP Residual norm 1.746593916471e+00 
+    2 KSP Residual norm 1.513351003270e+00 
+    3 KSP Residual norm 1.410494073618e+00 
+  4 SNES Function norm 1.491731169617e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.491731169617e+00 
+    1 KSP Residual norm 1.345161902221e+00 
+    2 KSP Residual norm 1.276434446199e+00 
+    3 KSP Residual norm 1.209255771915e+00 
+    4 KSP Residual norm 1.152183373239e+00 
+    5 KSP Residual norm 1.104838180080e+00 
+    6 KSP Residual norm 1.056480692140e+00 
+    7 KSP Residual norm 1.007180452004e+00 
+    8 KSP Residual norm 9.566424868961e-01 
+    9 KSP Residual norm 9.072007659881e-01 
+   10 KSP Residual norm 8.586790105002e-01 
+   11 KSP Residual norm 8.155372214989e-01 
+   12 KSP Residual norm 7.794369214178e-01 
+   13 KSP Residual norm 7.490291995617e-01 
+   14 KSP Residual norm 7.236098374732e-01 
+   15 KSP Residual norm 7.008115979299e-01 
+   16 KSP Residual norm 6.791704917190e-01 
+   17 KSP Residual norm 6.588101372371e-01 
+   18 KSP Residual norm 6.400211593593e-01 
+   19 KSP Residual norm 6.227565827684e-01 
+   20 KSP Residual norm 6.069840899838e-01 
+   21 KSP Residual norm 5.916247969977e-01 
+   22 KSP Residual norm 5.760519648975e-01 
+   23 KSP Residual norm 5.611479852240e-01 
+   24 KSP Residual norm 5.462904704783e-01 
+   25 KSP Residual norm 5.319251021387e-01 
+   26 KSP Residual norm 5.173914198595e-01 
+   27 KSP Residual norm 5.018284284566e-01 
+   28 KSP Residual norm 4.873354355701e-01 
+   29 KSP Residual norm 4.739793008487e-01 
+   30 KSP Residual norm 4.606847505430e-01 
+   31 KSP Residual norm 4.503276204136e-01 
+   32 KSP Residual norm 4.417259455407e-01 
+  5 SNES Function norm 1.148835593187e+00 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.148835593187e+00 
+    1 KSP Residual norm 4.950753306964e-01 
+  6 SNES Function norm 4.964854073551e-01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 4.964854073551e-01 
+    1 KSP Residual norm 4.394829148987e-01 
+    2 KSP Residual norm 4.247629980452e-01 
+    3 KSP Residual norm 4.154555857605e-01 
+    4 KSP Residual norm 4.063365872472e-01 
+    5 KSP Residual norm 3.984260142641e-01 
+    6 KSP Residual norm 3.913059449937e-01 
+    7 KSP Residual norm 3.846942432415e-01 
+    8 KSP Residual norm 3.781443435953e-01 
+    9 KSP Residual norm 3.720443809312e-01 
+   10 KSP Residual norm 3.656124612258e-01 
+   11 KSP Residual norm 3.588336954201e-01 
+   12 KSP Residual norm 3.521453660112e-01 
+   13 KSP Residual norm 3.452057973678e-01 
+   14 KSP Residual norm 3.381192951969e-01 
+  7 SNES Function norm 3.406674872635e-01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 3.406674872635e-01 
+    1 KSP Residual norm 3.315779988744e-01 
+    2 KSP Residual norm 3.263122973103e-01 
+    3 KSP Residual norm 3.213867619334e-01 
+    4 KSP Residual norm 3.166118300218e-01 
+    5 KSP Residual norm 3.116943446773e-01 
+    6 KSP Residual norm 3.067712810665e-01 
+    7 KSP Residual norm 3.024150473319e-01 
+    8 KSP Residual norm 2.986793134386e-01 
+    9 KSP Residual norm 2.949982724867e-01 
+   10 KSP Residual norm 2.914868640311e-01 
+   11 KSP Residual norm 2.881309477203e-01 
+   12 KSP Residual norm 2.843789927707e-01 
+   13 KSP Residual norm 2.801239889871e-01 
+   14 KSP Residual norm 2.747931082321e-01 
+   15 KSP Residual norm 2.679303637726e-01 
+   16 KSP Residual norm 2.617448940011e-01 
+   17 KSP Residual norm 2.551012506071e-01 
+   18 KSP Residual norm 2.468304782538e-01 
+   19 KSP Residual norm 2.368849997488e-01 
+   20 KSP Residual norm 2.264372228041e-01 
+   21 KSP Residual norm 2.150119294272e-01 
+  8 SNES Function norm 2.781087259288e-01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.781087259288e-01 
+    1 KSP Residual norm 2.107843078126e-01 
+  9 SNES Function norm 2.108798728767e-01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.108798728767e-01 
+    1 KSP Residual norm 2.026041270672e-01 
+    2 KSP Residual norm 1.977563405221e-01 
+    3 KSP Residual norm 1.940268436170e-01 
+    4 KSP Residual norm 1.909918161357e-01 
+    5 KSP Residual norm 1.883237103205e-01 
+    6 KSP Residual norm 1.857142339037e-01 
+    7 KSP Residual norm 1.832135813272e-01 
+    8 KSP Residual norm 1.809635348423e-01 
+    9 KSP Residual norm 1.790534171275e-01 
+   10 KSP Residual norm 1.773263705276e-01 
+   11 KSP Residual norm 1.756833333731e-01 
+   12 KSP Residual norm 1.740276904864e-01 
+   13 KSP Residual norm 1.721449471322e-01 
+   14 KSP Residual norm 1.699483438918e-01 
+   15 KSP Residual norm 1.674910798237e-01 
+   16 KSP Residual norm 1.648158537445e-01 
+   17 KSP Residual norm 1.616997029207e-01 
+   18 KSP Residual norm 1.583076349934e-01 
+   19 KSP Residual norm 1.546509251937e-01 
+ 10 SNES Function norm 1.585020014070e-01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.585020014070e-01 
+    1 KSP Residual norm 1.517910913124e-01 
+    2 KSP Residual norm 1.497234377456e-01 
+    3 KSP Residual norm 1.481800004160e-01 
+    4 KSP Residual norm 1.468755536101e-01 
+    5 KSP Residual norm 1.456585191510e-01 
+    6 KSP Residual norm 1.445589251782e-01 
+    7 KSP Residual norm 1.435258083110e-01 
+    8 KSP Residual norm 1.423683784459e-01 
+    9 KSP Residual norm 1.412039066859e-01 
+   10 KSP Residual norm 1.401910540312e-01 
+   11 KSP Residual norm 1.391855706525e-01 
+   12 KSP Residual norm 1.380932812201e-01 
+   13 KSP Residual norm 1.369100331117e-01 
+   14 KSP Residual norm 1.357556577171e-01 
+   15 KSP Residual norm 1.342586042117e-01 
+   16 KSP Residual norm 1.325402491151e-01 
+   17 KSP Residual norm 1.308919689422e-01 
+   18 KSP Residual norm 1.289794224996e-01 
+   19 KSP Residual norm 1.267297871659e-01 
+   20 KSP Residual norm 1.238541959688e-01 
+   21 KSP Residual norm 1.203057820569e-01 
+   22 KSP Residual norm 1.164992366457e-01 
+   23 KSP Residual norm 1.127391792672e-01 
+   24 KSP Residual norm 1.094641731738e-01 
+ 11 SNES Function norm 1.468361651791e-01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.468361651791e-01 
+    1 KSP Residual norm 1.083706387515e-01 
+ 12 SNES Function norm 1.083780226301e-01 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.083780226301e-01 
+    1 KSP Residual norm 1.064483509863e-01 
+    2 KSP Residual norm 1.052152173758e-01 
+    3 KSP Residual norm 1.041849257953e-01 
+    4 KSP Residual norm 1.033044905701e-01 
+    5 KSP Residual norm 1.025477050951e-01 
+    6 KSP Residual norm 1.018361382412e-01 
+    7 KSP Residual norm 1.011197630474e-01 
+    8 KSP Residual norm 1.005579464656e-01 
+    9 KSP Residual norm 1.000379262908e-01 
+   10 KSP Residual norm 9.950471996023e-02 
+   11 KSP Residual norm 9.894119635324e-02 
+   12 KSP Residual norm 9.835799132770e-02 
+   13 KSP Residual norm 9.774053521747e-02 
+   14 KSP Residual norm 9.705702573818e-02 
+   15 KSP Residual norm 9.625334079692e-02 
+   16 KSP Residual norm 9.540758410245e-02 
+ 13 SNES Function norm 9.551879781332e-02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 9.551879781332e-02 
+    1 KSP Residual norm 9.460975405348e-02 
+    2 KSP Residual norm 9.392336122303e-02 
+    3 KSP Residual norm 9.325640445527e-02 
+    4 KSP Residual norm 9.262960993033e-02 
+    5 KSP Residual norm 9.208063327131e-02 
+    6 KSP Residual norm 9.154024744602e-02 
+    7 KSP Residual norm 9.102341521774e-02 
+    8 KSP Residual norm 9.048812138358e-02 
+    9 KSP Residual norm 8.993444370721e-02 
+   10 KSP Residual norm 8.940620783763e-02 
+   11 KSP Residual norm 8.880226370046e-02 
+   12 KSP Residual norm 8.811522141250e-02 
+   13 KSP Residual norm 8.724049308975e-02 
+   14 KSP Residual norm 8.623546227103e-02 
+   15 KSP Residual norm 8.496398992252e-02 
+   16 KSP Residual norm 8.368611157027e-02 
+   17 KSP Residual norm 8.228439913741e-02 
+   18 KSP Residual norm 8.082938294821e-02 
+ 14 SNES Function norm 8.169636626744e-02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 8.169636626744e-02 
+    1 KSP Residual norm 7.959021570940e-02 
+    2 KSP Residual norm 7.859228970780e-02 
+    3 KSP Residual norm 7.771985512262e-02 
+    4 KSP Residual norm 7.698891729796e-02 
+    5 KSP Residual norm 7.634151716611e-02 
+    6 KSP Residual norm 7.582212184918e-02 
+    7 KSP Residual norm 7.542791990244e-02 
+    8 KSP Residual norm 7.506868831396e-02 
+    9 KSP Residual norm 7.472768800715e-02 
+   10 KSP Residual norm 7.440556925741e-02 
+   11 KSP Residual norm 7.408672979488e-02 
+   12 KSP Residual norm 7.373506596539e-02 
+   13 KSP Residual norm 7.338950882043e-02 
+   14 KSP Residual norm 7.303485766566e-02 
+   15 KSP Residual norm 7.261436312637e-02 
+   16 KSP Residual norm 7.202586761818e-02 
+   17 KSP Residual norm 7.140238157635e-02 
+   18 KSP Residual norm 7.083268916955e-02 
+   19 KSP Residual norm 7.019832943671e-02 
+   20 KSP Residual norm 6.941030077254e-02 
+   21 KSP Residual norm 6.845305005141e-02 
+   22 KSP Residual norm 6.725085671043e-02 
+ 15 SNES Function norm 6.734696868114e-02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 6.734696868114e-02 
+    1 KSP Residual norm 6.622293860470e-02 
+    2 KSP Residual norm 6.538313844691e-02 
+    3 KSP Residual norm 6.468265008066e-02 
+    4 KSP Residual norm 6.414655649310e-02 
+    5 KSP Residual norm 6.368236557643e-02 
+    6 KSP Residual norm 6.326158439701e-02 
+    7 KSP Residual norm 6.288815146380e-02 
+    8 KSP Residual norm 6.253658619406e-02 
+    9 KSP Residual norm 6.220479831417e-02 
+   10 KSP Residual norm 6.187845990058e-02 
+   11 KSP Residual norm 6.158590245389e-02 
+   12 KSP Residual norm 6.129562622565e-02 
+   13 KSP Residual norm 6.099270328128e-02 
+   14 KSP Residual norm 6.066335575088e-02 
+   15 KSP Residual norm 6.026867473057e-02 
+   16 KSP Residual norm 5.982521440513e-02 
+   17 KSP Residual norm 5.930224435036e-02 
+   18 KSP Residual norm 5.870671484303e-02 
+   19 KSP Residual norm 5.796452161391e-02 
+   20 KSP Residual norm 5.705421125500e-02 
+   21 KSP Residual norm 5.595795067317e-02 
+   22 KSP Residual norm 5.468531825803e-02 
+   23 KSP Residual norm 5.330305212272e-02 
+ 16 SNES Function norm 5.352919226690e-02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 5.352919226690e-02 
+    1 KSP Residual norm 5.226227297599e-02 
+    2 KSP Residual norm 5.142245065736e-02 
+    3 KSP Residual norm 5.072942686836e-02 
+    4 KSP Residual norm 5.011553890325e-02 
+    5 KSP Residual norm 4.957362082656e-02 
+    6 KSP Residual norm 4.909741615865e-02 
+    7 KSP Residual norm 4.866825972429e-02 
+    8 KSP Residual norm 4.827189547199e-02 
+    9 KSP Residual norm 4.790209570784e-02 
+   10 KSP Residual norm 4.754539723524e-02 
+   11 KSP Residual norm 4.720940027475e-02 
+   12 KSP Residual norm 4.688308704184e-02 
+   13 KSP Residual norm 4.655935485584e-02 
+   14 KSP Residual norm 4.624040863471e-02 
+   15 KSP Residual norm 4.590171485038e-02 
+   16 KSP Residual norm 4.551806189950e-02 
+   17 KSP Residual norm 4.511352766430e-02 
+   18 KSP Residual norm 4.468680185330e-02 
+   19 KSP Residual norm 4.420599150526e-02 
+   20 KSP Residual norm 4.366188187426e-02 
+   21 KSP Residual norm 4.303149790934e-02 
+   22 KSP Residual norm 4.231766755601e-02 
+   23 KSP Residual norm 4.152402566999e-02 
+   24 KSP Residual norm 4.036006793665e-02 
+ 17 SNES Function norm 4.037349871195e-02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 4.037349871195e-02 
+    1 KSP Residual norm 3.944623663696e-02 
+    2 KSP Residual norm 3.872106886303e-02 
+    3 KSP Residual norm 3.812092616148e-02 
+    4 KSP Residual norm 3.765311991074e-02 
+    5 KSP Residual norm 3.726135637201e-02 
+    6 KSP Residual norm 3.694058493708e-02 
+    7 KSP Residual norm 3.669019361253e-02 
+    8 KSP Residual norm 3.642553950426e-02 
+    9 KSP Residual norm 3.610700756334e-02 
+   10 KSP Residual norm 3.578289842069e-02 
+   11 KSP Residual norm 3.547845453860e-02 
+   12 KSP Residual norm 3.518557238352e-02 
+   13 KSP Residual norm 3.489952599906e-02 
+   14 KSP Residual norm 3.461390831742e-02 
+   15 KSP Residual norm 3.430230691853e-02 
+   16 KSP Residual norm 3.398402768209e-02 
+   17 KSP Residual norm 3.360839043639e-02 
+   18 KSP Residual norm 3.313225413640e-02 
+   19 KSP Residual norm 3.261357336615e-02 
+   20 KSP Residual norm 3.204340410321e-02 
+   21 KSP Residual norm 3.137934387342e-02 
+   22 KSP Residual norm 3.058327723390e-02 
+   23 KSP Residual norm 2.972349435058e-02 
+   24 KSP Residual norm 2.871933334414e-02 
+ 18 SNES Function norm 2.888556553392e-02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 2.888556553392e-02 
+    1 KSP Residual norm 2.798662173232e-02 
+    2 KSP Residual norm 2.728834061244e-02 
+    3 KSP Residual norm 2.677317227223e-02 
+    4 KSP Residual norm 2.634358385856e-02 
+    5 KSP Residual norm 2.593339099804e-02 
+    6 KSP Residual norm 2.560445750397e-02 
+    7 KSP Residual norm 2.532421048689e-02 
+    8 KSP Residual norm 2.508204404387e-02 
+    9 KSP Residual norm 2.483976049502e-02 
+   10 KSP Residual norm 2.461496714587e-02 
+   11 KSP Residual norm 2.437113193711e-02 
+   12 KSP Residual norm 2.413327025483e-02 
+   13 KSP Residual norm 2.391321584960e-02 
+   14 KSP Residual norm 2.368567474050e-02 
+   15 KSP Residual norm 2.343012918467e-02 
+   16 KSP Residual norm 2.318565334835e-02 
+   17 KSP Residual norm 2.293718499596e-02 
+   18 KSP Residual norm 2.268301165128e-02 
+   19 KSP Residual norm 2.242629880121e-02 
+   20 KSP Residual norm 2.217110824517e-02 
+   21 KSP Residual norm 2.187677779727e-02 
+   22 KSP Residual norm 2.157319144470e-02 
+   23 KSP Residual norm 2.125717886225e-02 
+   24 KSP Residual norm 2.092014273638e-02 
+   25 KSP Residual norm 2.057581863620e-02 
+   26 KSP Residual norm 2.021810913527e-02 
+   27 KSP Residual norm 1.979798180698e-02 
+ 19 SNES Function norm 1.984019223067e-02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.984019223067e-02 
+    1 KSP Residual norm 1.945660539951e-02 
+    2 KSP Residual norm 1.911816281689e-02 
+    3 KSP Residual norm 1.879044274862e-02 
+    4 KSP Residual norm 1.847766202999e-02 
+    5 KSP Residual norm 1.822855003475e-02 
+    6 KSP Residual norm 1.802229844362e-02 
+    7 KSP Residual norm 1.782531581177e-02 
+    8 KSP Residual norm 1.762273459660e-02 
+    9 KSP Residual norm 1.743369419065e-02 
+   10 KSP Residual norm 1.727617357745e-02 
+   11 KSP Residual norm 1.713167905443e-02 
+   12 KSP Residual norm 1.700023981044e-02 
+   13 KSP Residual norm 1.686902428853e-02 
+   14 KSP Residual norm 1.673382534849e-02 
+   15 KSP Residual norm 1.659467851482e-02 
+   16 KSP Residual norm 1.643754657509e-02 
+   17 KSP Residual norm 1.623849249252e-02 
+   18 KSP Residual norm 1.601559848705e-02 
+   19 KSP Residual norm 1.578253419644e-02 
+   20 KSP Residual norm 1.557091355950e-02 
+   21 KSP Residual norm 1.530778850481e-02 
+   22 KSP Residual norm 1.502065757363e-02 
+   23 KSP Residual norm 1.474213709804e-02 
+   24 KSP Residual norm 1.446459587435e-02 
+   25 KSP Residual norm 1.414049526314e-02 
+   26 KSP Residual norm 1.373856363123e-02 
+   27 KSP Residual norm 1.327399729822e-02 
+   28 KSP Residual norm 1.275260868856e-02 
+   29 KSP Residual norm 1.224860752692e-02 
+ 20 SNES Function norm 1.229862876333e-02 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.229862876333e-02 
+    1 KSP Residual norm 1.185643957914e-02 
+    2 KSP Residual norm 1.150715757645e-02 
+    3 KSP Residual norm 1.118805256904e-02 
+    4 KSP Residual norm 1.092188021509e-02 
+    5 KSP Residual norm 1.069749708791e-02 
+    6 KSP Residual norm 1.049362376226e-02 
+    7 KSP Residual norm 1.030969144276e-02 
+    8 KSP Residual norm 1.013302697186e-02 
+    9 KSP Residual norm 9.962860839442e-03 
+   10 KSP Residual norm 9.815881539783e-03 
+   11 KSP Residual norm 9.681868265549e-03 
+   12 KSP Residual norm 9.554879914022e-03 
+   13 KSP Residual norm 9.453844962459e-03 
+   14 KSP Residual norm 9.366565399244e-03 
+   15 KSP Residual norm 9.278310319124e-03 
+   16 KSP Residual norm 9.199023636190e-03 
+   17 KSP Residual norm 9.122454867730e-03 
+   18 KSP Residual norm 9.050716813156e-03 
+   19 KSP Residual norm 8.976487332878e-03 
+   20 KSP Residual norm 8.900123909966e-03 
+   21 KSP Residual norm 8.814619547539e-03 
+   22 KSP Residual norm 8.723793414452e-03 
+   23 KSP Residual norm 8.621752405573e-03 
+   24 KSP Residual norm 8.501638901907e-03 
+   25 KSP Residual norm 8.373073879243e-03 
+   26 KSP Residual norm 8.241894087756e-03 
+   27 KSP Residual norm 8.097207711340e-03 
+   28 KSP Residual norm 7.945143734691e-03 
+   29 KSP Residual norm 7.774999219211e-03 
+   30 KSP Residual norm 7.588194826039e-03 
+   31 KSP Residual norm 7.423177743863e-03 
+   32 KSP Residual norm 7.281996386090e-03 
+   33 KSP Residual norm 7.161127073315e-03 
+   34 KSP Residual norm 7.050927824355e-03 
+ 21 SNES Function norm 7.054002434230e-03 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 7.054002434230e-03 
+    1 KSP Residual norm 6.968804214645e-03 
+    2 KSP Residual norm 6.889254361945e-03 
+    3 KSP Residual norm 6.812644697681e-03 
+    4 KSP Residual norm 6.737343985933e-03 
+    5 KSP Residual norm 6.650560298831e-03 
+    6 KSP Residual norm 6.563014729537e-03 
+    7 KSP Residual norm 6.474328056483e-03 
+    8 KSP Residual norm 6.377472529767e-03 
+    9 KSP Residual norm 6.285880907488e-03 
+   10 KSP Residual norm 6.192262150701e-03 
+   11 KSP Residual norm 6.111523704809e-03 
+   12 KSP Residual norm 6.036666910687e-03 
+   13 KSP Residual norm 5.961178995978e-03 
+   14 KSP Residual norm 5.883006928896e-03 
+   15 KSP Residual norm 5.805011267835e-03 
+   16 KSP Residual norm 5.728247362542e-03 
+   17 KSP Residual norm 5.641567285160e-03 
+   18 KSP Residual norm 5.555296322795e-03 
+   19 KSP Residual norm 5.443459899045e-03 
+   20 KSP Residual norm 5.330382686295e-03 
+   21 KSP Residual norm 5.204861153918e-03 
+   22 KSP Residual norm 5.070782470953e-03 
+   23 KSP Residual norm 4.919299257869e-03 
+   24 KSP Residual norm 4.752475669977e-03 
+   25 KSP Residual norm 4.574202653800e-03 
+   26 KSP Residual norm 4.392155582876e-03 
+   27 KSP Residual norm 4.171099705855e-03 
+   28 KSP Residual norm 3.941536950869e-03 
+   29 KSP Residual norm 3.738327948757e-03 
+   30 KSP Residual norm 3.520338066126e-03 
+ 22 SNES Function norm 3.527758055018e-03 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 3.527758055018e-03 
+    1 KSP Residual norm 3.357981065960e-03 
+    2 KSP Residual norm 3.235675459796e-03 
+    3 KSP Residual norm 3.115140791730e-03 
+    4 KSP Residual norm 3.004524862532e-03 
+    5 KSP Residual norm 2.913782166208e-03 
+    6 KSP Residual norm 2.837655858299e-03 
+    7 KSP Residual norm 2.770999483254e-03 
+    8 KSP Residual norm 2.706251089935e-03 
+    9 KSP Residual norm 2.644867690340e-03 
+   10 KSP Residual norm 2.588477154412e-03 
+   11 KSP Residual norm 2.539179375240e-03 
+   12 KSP Residual norm 2.493631918676e-03 
+   13 KSP Residual norm 2.454203884987e-03 
+   14 KSP Residual norm 2.419662224001e-03 
+   15 KSP Residual norm 2.384113082118e-03 
+   16 KSP Residual norm 2.349171195684e-03 
+   17 KSP Residual norm 2.312423177249e-03 
+   18 KSP Residual norm 2.280489358478e-03 
+   19 KSP Residual norm 2.253686361380e-03 
+   20 KSP Residual norm 2.229028139126e-03 
+   21 KSP Residual norm 2.204703880238e-03 
+   22 KSP Residual norm 2.181170168514e-03 
+   23 KSP Residual norm 2.156779358926e-03 
+   24 KSP Residual norm 2.129794863849e-03 
+   25 KSP Residual norm 2.100572531120e-03 
+   26 KSP Residual norm 2.069939300331e-03 
+   27 KSP Residual norm 2.038853266177e-03 
+   28 KSP Residual norm 2.004305048328e-03 
+   29 KSP Residual norm 1.966871086843e-03 
+   30 KSP Residual norm 1.926288240909e-03 
+   31 KSP Residual norm 1.890208797425e-03 
+   32 KSP Residual norm 1.861661318227e-03 
+   33 KSP Residual norm 1.836945655370e-03 
+   34 KSP Residual norm 1.811839338595e-03 
+   35 KSP Residual norm 1.787857997518e-03 
+   36 KSP Residual norm 1.767745370466e-03 
+   37 KSP Residual norm 1.749148190416e-03 
+   38 KSP Residual norm 1.730898438850e-03 
+   39 KSP Residual norm 1.712710195560e-03 
+   40 KSP Residual norm 1.695182130674e-03 
+   41 KSP Residual norm 1.678222198655e-03 
+   42 KSP Residual norm 1.660746244691e-03 
+   43 KSP Residual norm 1.642036944908e-03 
+   44 KSP Residual norm 1.622716759795e-03 
+   45 KSP Residual norm 1.602199709771e-03 
+ 23 SNES Function norm 1.602188279810e-03 
+    Residual norms for Metos3DNewton_ solve.
+    0 KSP Residual norm 1.602188279810e-03 
+    1 KSP Residual norm 1.583723686669e-03 
+    2 KSP Residual norm 1.566575042016e-03 
+    3 KSP Residual norm 1.551423854791e-03 
+    4 KSP Residual norm 1.538132978566e-03 
+    5 KSP Residual norm 1.526172126403e-03 
+    6 KSP Residual norm 1.513978985691e-03 
+    7 KSP Residual norm 1.501661704831e-03 
+    8 KSP Residual norm 1.489008174442e-03 
+    9 KSP Residual norm 1.473829146722e-03 
+   10 KSP Residual norm 1.459386357133e-03 
+   11 KSP Residual norm 1.444269257733e-03 
+   12 KSP Residual norm 1.426070207666e-03 
+   13 KSP Residual norm 1.406201557661e-03 
+   14 KSP Residual norm 1.383288397314e-03 
+   15 KSP Residual norm 1.359036943469e-03 
+   16 KSP Residual norm 1.330172966672e-03 
+   17 KSP Residual norm 1.291114325776e-03 
+   18 KSP Residual norm 1.257749867886e-03 
+   19 KSP Residual norm 1.220874129307e-03 
+   20 KSP Residual norm 1.174364101663e-03 
+   21 KSP Residual norm 1.129844736991e-03 
+   22 KSP Residual norm 1.075038851120e-03 
+   23 KSP Residual norm 1.013596241638e-03 
+   24 KSP Residual norm 9.583526457372e-04 
+   25 KSP Residual norm 9.186588548993e-04 
+   26 KSP Residual norm 8.830297948396e-04 
+ 24 SNES Function norm 8.830527700312e-04 
+Request ID: 21944.nesh-siox
+    Request Name = sample.29
+    User  Name = sunip194
+    User  ID   = 18873
+    Group ID   = 8201
+    Current State           = Running
+    Previous State          = Pre-running
+    State Transition Time   = Fri May 24 22:23:46 2013
+    State Transition Reason = PRERUN_SUCCESS
+    Queue = clfocean@nesh-siox (Execution Queue)
+    Job Topology = MPICH Job
+    Request Privilege = Level 0
+    Ticket Key        = (none)
+    Request Priority  = 0
+    Request Loglevel  = 0
+    Rerunable    = Yes
+    Holdable     = Yes
+    Hold Type    = (none)
+    Migratable   = Yes
+    Suspend Type = (none)
+    Account Code = (none)
+    Stdout = nesh-fe0:/gfs/work-sh1/sunip194/CODE/github/metos3d/verification/parameterrange-4/work/metos3d.nesh-fe.sample.29.out.txt
+    Stderr = nesh-fe0:/gfs/work-sh1/sunip194/CODE/github/metos3d/verification/parameterrange-4/work/metos3d.nesh-fe.sample.29.out.txt
+    Reqlog = (none)
+    Shell = (none)
+    Mail Address = sunip194@nesh-fe0
+    Mail Option  = (none)
+    Job Condition:
+        Job NO: 0-3 ""
+    Number of Jobs = 4
+    Created Request Time = Fri May 24 10:47:13 2013
+    Entered Queue Time   = Fri May 24 10:47:13 2013
+    Execute Request Time = (none)
+    Started Request Time = Fri May 24 22:23:46 2013
+    Ended Request Time   = (none)
+    Requested Start Time = (none)
+    Deadline Time        = (none)
+    UMASK = 022
+    Checkpoint Interval = 0
+    Restart File Directory = (none)
+    Reservation ID      = (none)
+  Resources Information:
+    Memory    = 869.292969MB
+    CPU Time  = 22709.210000S
+    Accumulated CPU Time = 22709.210000S
+    Elapse    = 1424S
+    Remaining Elapse = 2176S
+    Virtual Memory = 5.543339GB
+  Resources Limits:
+    (Per-Req) Elapse Time Limit       = Max:     3600S Warn:     3600S 
+    (Per-Job) CPU Time                = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) CPU Resident Number     = Max: UNLIMITED Warn:       --- 
+    (Per-Job) CPU Resident Time       = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) CPU Number              = Max:        16 Warn:       --- 
+    (Per-Job) Tape Number             = Max: UNLIMITED Warn:       --- 
+    (Per-Job) Open File Number        = Max: UNLIMITED Warn:       --- 
+    (Per-Job) Process Number          = Max: UNLIMITED Warn:       --- 
+    (Per-Job) Memory Size             = Max:       32G Warn:       32G 
+    (Per-Job) Virtual Memory Size     = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) Permanent File Capacity = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) Temporary File Capacity = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) RLG 0 File Capacity     = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) RLG 1 File Capacity     = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) RLG 2 File Capacity     = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) RLG 3 File Capacity     = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Job) GPID Number             = Max: UNLIMITED Warn:       --- 
+    (Per-Prc) CPU Time                = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Prc) CPU Resident Number     = Max: UNLIMITED Warn:       --- 
+    (Per-Prc) CPU Resident Time       = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Prc) CPU Number              = Max: UNLIMITED Warn:       --- 
+    (Per-Prc) Task Number             = Max: UNLIMITED Warn:       --- 
+    (Per-Prc) Open File Number        = Max: UNLIMITED Warn:       --- 
+    (Per-Prc) Memory Size             = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Prc) Virtual Memory Size     = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Prc) Data Segment Size       = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Prc) Stack Segment Size      = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Prc) Core File Size          = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Prc) Permanent File Size     = Max: UNLIMITED Warn: UNLIMITED 
+    (Per-Prc) Permanent File Capacity = Max: UNLIMITED Warn: UNLIMITED 
+  Kernel Parameter:
+    Resource Sharing Group     = 0
+    Nice Value                 = 0
+    Base Priority              = 80
+    Modification Factor of CPU = 2
+    Tick Count                 = 0
+    Decay Factor               = 1
+    Decay Interval             = 1
+    Timeslice Value            = 1000
+    Memory Priority            = 0
+    MRT Size Effect            = 30
+    MRT Priority Effect        = 100
+    MRT Minimum                = 2
+    Aging Range                = 160
+    Slave Priority             = 0
+  User Attributes:
+    (none)
+
+
+%NQSII(INFO): ------- Output from job:0001 -------
+
+%NQSII(INFO): ------- Output from job:0002 -------
+
+%NQSII(INFO): ------- Output from job:0003 -------
