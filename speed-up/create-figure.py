@@ -6,6 +6,7 @@ import sys
 import numpy as np
 import matplotlib
 matplotlib.rc("font",**{"family":"sans-serif"})
+matplotlib.rcParams.update({'font.size': 14})
 matplotlib.rc("text", usetex=True)
 matplotlib.use("PDF")
 import matplotlib.pyplot as plt
@@ -137,10 +138,10 @@ def figure_create_plot_speedup(nesh_fe_data, spk_data, load_data):
     p4, = plt.plot(xrange[0:192], spk_data, "-", lw=1, color="0.7")
     
     # legend
-    leg1 = "Ideal"
-    leg2 = "Best possible"
-    leg3 = r"Metos3D"
-    leg4 = r"TMM"
+    leg1 = r"Perfect"
+    leg2 = r"Theoretical limit of Metos3D load balancing"
+    leg3 = r"Metos3D on Intel$^{\mbox{\textregistered}}$ Sandy Bridge EP hardware"
+    leg4 = r"TMM on Intel$^{\mbox{\textregistered}}$ Sandy Bridge EP hardware"
     plt.legend([p1,p2,p3,p4],[leg1,leg2,leg3,leg4], loc=2, numpoints=1, fontsize = 12.0)
     # save
     plt.figure(1)
