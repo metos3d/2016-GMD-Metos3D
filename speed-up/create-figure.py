@@ -138,10 +138,10 @@ def figure_create_plot_speedup(nesh_fe_data, spk_data, load_data):
     p4, = plt.plot(xrange[0:192], spk_data, "-", lw=1, color="0.7")
     
     # legend
-    leg1 = r"Perfect"
-    leg2 = r"Theoretical limit of Metos3D load balancing"
-    leg3 = r"Metos3D on Intel$^{\mbox{\textregistered}}$ Sandy Bridge EP hardware"
-    leg4 = r"TMM on Intel$^{\mbox{\textregistered}}$ Sandy Bridge EP hardware"
+    leg1 = r"Ideal"
+    leg2 = r"Theoretical"
+    leg3 = r"Metos3D (Intel$^{\mbox{\textregistered}}$ Sandy Bridge EP)"
+    leg4 = r"TMM (Intel$^{\mbox{\textregistered}}$ Sandy Bridge EP)"
     plt.legend([p1,p2,p3,p4],[leg1,leg2,leg3,leg4], loc=2, numpoints=1, fontsize = 12.0)
     # save
     plt.figure(1)
