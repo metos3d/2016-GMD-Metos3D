@@ -24,8 +24,8 @@ Generated samples using MATLAB's `lhsdesign` routine:
     import numpy as np
 
     fid = open('LHS-samples.bin', 'rb')
-    m   = np.fromfile(fid, dtype = '>i4', count = 1)
-    n   = np.fromfile(fid, dtype = '>i4', count = 1)
+    m,  = np.fromfile(fid, dtype = '>i4', count = 1)
+    n,  = np.fromfile(fid, dtype = '>i4', count = 1)
     x   = np.fromfile(fid, dtype = '>f8', count = m * n)
     fid.close()
 
